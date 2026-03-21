@@ -1,0 +1,181 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Locksmith",
+      "@id": "https://coimbraservicos.pt/serralheiro/#business",
+      "name": "Serralheiro Coimbra — Urgente 24h",
+      "description": "Fechado fora de casa em Coimbra? Serralheiro urgente 24h — abertura de porta sem danos em 30 minutos. Coimbra e Distrito.",
+      "url": "https://coimbraservicos.pt/serralheiro/",
+      "telephone": "+351 966 077 317",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Santo António dos Olivais"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Almedina"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Cruz"
+        },
+        {
+          "@type": "Place",
+          "name": "São Martinho do Bispo"
+        },
+        {
+          "@type": "Place",
+          "name": "Condeixa-a-Nova"
+        },
+        {
+          "@type": "Place",
+          "name": "Mealhada"
+        },
+        {
+          "@type": "Place",
+          "name": "Penacova"
+        },
+        {
+          "@type": "Place",
+          "name": "Miranda do Corvo"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "€€"
+    },
+    {
+      "@type": "Service",
+      "name": "Serralheiro em Coimbra",
+      "serviceType": "Serviços de Serralharia e Abertura de Portas",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Santo António dos Olivais"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Almedina"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Cruz"
+        },
+        {
+          "@type": "Place",
+          "name": "São Martinho do Bispo"
+        },
+        {
+          "@type": "Place",
+          "name": "Condeixa-a-Nova"
+        },
+        {
+          "@type": "Place",
+          "name": "Mealhada"
+        },
+        {
+          "@type": "Place",
+          "name": "Penacova"
+        },
+        {
+          "@type": "Place",
+          "name": "Miranda do Corvo"
+        }
+      ],
+      "provider": {
+        "@id": "https://coimbraservicos.pt/serralheiro/#business"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Conseguem abrir uma porta sem destruir a fechadura?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. A abertura técnica preserva a fechadura na grande maioria dos casos — fechaduras yale, abloy, cilindro europeu. O objetivo é sempre abrir sem danos e sem necessidade de substituição imediata. Em fechaduras danificadas ou bloqueadas por dentro, a substituição pode ser necessária."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo demora a chegar após o contacto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dentro de Coimbra cidade, a deslocação demora normalmente entre 20 e 40 minutos. Em concelhos do Distrito — Condeixa, Mealhada, Miranda do Corvo — entre 45 e 90 minutos. Confirme o tempo estimado ao contactar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "É cobrado orçamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O orçamento no local é apresentado antes de qualquer intervenção. Para chamadas nocturnas ou ao fim de semana pode aplicar-se uma taxa de deslocação. Confirme o custo total ao contactar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Trabalham com seguros para arrombamentos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Em caso de porta forçada ou arrombada, emitimos fatura detalhada com descrição dos trabalhos — útil para comunicação ao seguro. Verificamos o estado da fechadura e porta e recomendamos reforço adequado para prevenir nova ocorrência."
+          }
+        }
+      ]
+    }
+  ]
+}

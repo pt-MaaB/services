@@ -1,0 +1,213 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LandscapeService",
+      "@id": "https://coimbraservicos.pt/limpeza-terrenos/profissional/#business",
+      "name": "Limpeza de Terrenos Coimbra — Desmatação Profissional com Equipamento Pesado",
+      "description": "Desmatação e limpeza de terrenos em Coimbra com equipamento pesado. Terreno limpo, valorizado e em conformidade legal — orçamento gratuito com visita.",
+      "url": "https://coimbraservicos.pt/limpeza-terrenos/profissional/",
+      "telephone": "+351 964 213 808",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Santo António dos Olivais"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Almedina"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Cruz"
+        },
+        {
+          "@type": "Place",
+          "name": "São Martinho do Bispo"
+        },
+        {
+          "@type": "Place",
+          "name": "Condeixa-a-Nova"
+        },
+        {
+          "@type": "Place",
+          "name": "Mealhada"
+        },
+        {
+          "@type": "Place",
+          "name": "Penacova"
+        },
+        {
+          "@type": "Place",
+          "name": "Miranda do Corvo"
+        },
+        {
+          "@type": "Place",
+          "name": "Lousã"
+        },
+        {
+          "@type": "Place",
+          "name": "Arganil"
+        },
+        {
+          "@type": "Place",
+          "name": "Góis"
+        },
+        {
+          "@type": "Place",
+          "name": "Pampilhosa da Serra"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "€€"
+    },
+    {
+      "@type": "Service",
+      "name": "Limpeza e Valorização de Terrenos em Coimbra",
+      "serviceType": "Limpeza, Desmatação e Valorização de Terrenos",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Santo António dos Olivais"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Almedina"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Cruz"
+        },
+        {
+          "@type": "Place",
+          "name": "São Martinho do Bispo"
+        },
+        {
+          "@type": "Place",
+          "name": "Condeixa-a-Nova"
+        },
+        {
+          "@type": "Place",
+          "name": "Mealhada"
+        },
+        {
+          "@type": "Place",
+          "name": "Penacova"
+        },
+        {
+          "@type": "Place",
+          "name": "Miranda do Corvo"
+        },
+        {
+          "@type": "Place",
+          "name": "Lousã"
+        },
+        {
+          "@type": "Place",
+          "name": "Arganil"
+        },
+        {
+          "@type": "Place",
+          "name": "Góis"
+        },
+        {
+          "@type": "Place",
+          "name": "Pampilhosa da Serra"
+        }
+      ],
+      "provider": {
+        "@id": "https://coimbraservicos.pt/limpeza-terrenos/profissional/#business"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto custa limpar um terreno em Coimbra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O preço depende da área, tipo de vegetação e acessos. Indicativamente: terreno plano com mato baixo (500 m²–1 ha): €150–€400. Terreno com mato alto e declive: €300–€600 por hectare. Abate de árvores grandes: €80–€250 por árvore conforme dimensão e acesso. Orçamento sempre gratuito com visita ao local."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Trabalham em terrenos sem acesso direto de veículo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Para terrenos sem acesso de trator, usamos roçadeira manual e moto-roçadeira. Para terrenos em socalcos ou com declive acentuado, temos equipamento específico. O acesso é avaliado na visita prévia e reflectido no orçamento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a melhor época para limpar um terreno em Coimbra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Janeiro, fevereiro e março são o prazo legal DFCI e a melhor época operacional — vegetação está mais seca, a rebrota de primavera ainda não ocorreu e as condições climáticas são favoráveis para trabalhos pesados. Agosto a outubro é a segunda janela preferida para manutenção pós-verão."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Podem tratar terrenos em toda a zona serrana do Distrito?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Cobrimos Coimbra cidade e todo o Distrito — incluindo concelhos serranos como Lousã, Arganil, Pampilhosa da Serra e Góis. Para terrenos em zonas de difícil acesso, pode ser necessária logística adicional refletida no orçamento."
+          }
+        }
+      ]
+    }
+  ]
+}

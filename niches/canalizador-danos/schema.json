@@ -1,0 +1,181 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Plumber",
+      "@id": "https://coimbraservicos.pt/canalizador/danos/#business",
+      "name": "Canalizador Coimbra — Danos e Reparações de Emergência",
+      "description": "Fuga de água em Coimbra? Cada hora sem reparação causa danos estruturais que chegam a €3.000+. Canalizador urgente — resposta em 30 min.",
+      "url": "https://coimbraservicos.pt/canalizador/danos/",
+      "telephone": "+351 917 493 600",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Santo António dos Olivais"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Almedina"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Cruz"
+        },
+        {
+          "@type": "Place",
+          "name": "São Martinho do Bispo"
+        },
+        {
+          "@type": "Place",
+          "name": "Condeixa-a-Nova"
+        },
+        {
+          "@type": "Place",
+          "name": "Mealhada"
+        },
+        {
+          "@type": "Place",
+          "name": "Penacova"
+        },
+        {
+          "@type": "Place",
+          "name": "Miranda do Corvo"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "€€"
+    },
+    {
+      "@type": "Service",
+      "name": "Canalizador em Coimbra",
+      "serviceType": "Canalizações e Reparações de Emergência",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Santo António dos Olivais"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Almedina"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Cruz"
+        },
+        {
+          "@type": "Place",
+          "name": "São Martinho do Bispo"
+        },
+        {
+          "@type": "Place",
+          "name": "Condeixa-a-Nova"
+        },
+        {
+          "@type": "Place",
+          "name": "Mealhada"
+        },
+        {
+          "@type": "Place",
+          "name": "Penacova"
+        },
+        {
+          "@type": "Place",
+          "name": "Miranda do Corvo"
+        }
+      ],
+      "provider": {
+        "@id": "https://coimbraservicos.pt/canalizador/danos/#business"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Uma fuga de água é sempre urgente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende do tipo. Uma torneira a pingar pode esperar. Uma fuga activa em tubagem — especialmente em paredes ou tectos — deve ser tratada o mais rápido possível. O custo de reparação da canalização é sempre muito menor que o custo dos danos estruturais acumulados."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O seguro cobre danos de fuga de água?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A maioria dos seguros multirriscos habitação cobre danos de fuga de água, mas exige documentação da causa e da reparação. Guardar fotografias antes e depois, e a fatura do canalizador, é essencial para qualquer processo de sinistro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto custa reparar uma fuga em Coimbra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Uma fuga simples em torneira ou ligação: €60–€120. Fuga em tubagem com necessidade de abertura de parede: €150–€350 mais custo de reparação da parede. Uma rotura em tubagem embutida detectada com câmara: €250–€500. Quanto mais cedo actuar, menor o custo total."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como localizar a torneira geral de corte?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Em apartamentos, fica normalmente no armário debaixo do lavatório da cozinha, junto ao contador de água. Em moradias, está frequentemente numa caixa enterrada no jardim ou numa caixa metálica na fachada. Memorize a localização antes de precisar dela."
+          }
+        }
+      ]
+    }
+  ]
+}

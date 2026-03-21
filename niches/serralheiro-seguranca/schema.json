@@ -1,0 +1,181 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Locksmith",
+      "@id": "https://coimbraservicos.pt/serralheiro/seguranca/#business",
+      "name": "Serralheiro Coimbra — Fechaduras de Segurança e Portas Blindadas",
+      "description": "Instale uma fechadura de segurança em Coimbra. Cilindros alta segurança, fechos adicionais e portas blindadas — serralheiro certificado, orçamento gratuito.",
+      "url": "https://coimbraservicos.pt/serralheiro/seguranca/",
+      "telephone": "+351 966 077 317",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Santo António dos Olivais"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Almedina"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Cruz"
+        },
+        {
+          "@type": "Place",
+          "name": "São Martinho do Bispo"
+        },
+        {
+          "@type": "Place",
+          "name": "Condeixa-a-Nova"
+        },
+        {
+          "@type": "Place",
+          "name": "Mealhada"
+        },
+        {
+          "@type": "Place",
+          "name": "Penacova"
+        },
+        {
+          "@type": "Place",
+          "name": "Miranda do Corvo"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "€€"
+    },
+    {
+      "@type": "Service",
+      "name": "Segurança de Portas em Coimbra",
+      "serviceType": "Fechaduras de Segurança e Reforço de Porta",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Santo António dos Olivais"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Almedina"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Cruz"
+        },
+        {
+          "@type": "Place",
+          "name": "São Martinho do Bispo"
+        },
+        {
+          "@type": "Place",
+          "name": "Condeixa-a-Nova"
+        },
+        {
+          "@type": "Place",
+          "name": "Mealhada"
+        },
+        {
+          "@type": "Place",
+          "name": "Penacova"
+        },
+        {
+          "@type": "Place",
+          "name": "Miranda do Corvo"
+        }
+      ],
+      "provider": {
+        "@id": "https://coimbraservicos.pt/serralheiro/seguranca/#business"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre classes de fechaduras de segurança?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A norma EN 1303 classifica fechaduras de 1 a 6 por resistência ao ataque. Classe 1-2: uso doméstico básico (não recomendado). Classe 3-4: segurança standard para habitação (recomendado). Classe 5-6: alta segurança para uso comercial ou habitações de risco elevado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Podem instalar fechadura de segurança sem substituir a porta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, na maioria dos casos. O cilindro de segurança pode ser instalado numa porta existente sem necessidade de substituição. Avaliamos a compatibilidade da porta e do marco no local. Portas com mais de 20 anos ou em mau estado podem precisar de reforço adicional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto custa uma fechadura de segurança instalada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cilindro alta segurança classe 4 instalado: €150–€350. Fecho multiponto: €300–€600. Porta blindada fornecida e instalada: €800–€2.500 conforme modelo. O orçamento é sempre gratuito e detalhado antes de qualquer trabalho."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo demora a instalação?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Substituição de cilindro: 30–60 minutos. Instalação de fecho multiponto: 2–4 horas. Instalação de porta blindada: meio dia. Nas urgências de substituição por arrombamento, temos stock de fechaduras standard para instalação imediata."
+          }
+        }
+      ]
+    }
+  ]
+}

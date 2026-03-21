@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{PAGE_TITLE}}">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:locale" content="pt_PT">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{GA4_ID}}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{GA4_ID}}');
+  </script>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "{{SCHEMA_BUSINESS_TYPE}}",
+        "@id": "{{CANONICAL_URL}}#business",
+        "name": "{{BUSINESS_NAME}}",
+        "description": "{{META_DESCRIPTION}}",
+        "url": "{{CANONICAL_URL}}",
+        "telephone": "{{PHONE_NUMBER}}",
+        "areaServed": {{COVERAGE_ZONES_SCHEMA}},
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "priceRange": "{{PRICE_RANGE}}"
+      },
+      {
+        "@type": "Service",
+        "name": "{{SERVICE_NAME}}",
+        "serviceType": "{{SERVICE_TYPE}}",
+        "areaServed": {{COVERAGE_ZONES_SCHEMA}},
+        "provider": {"@id": "{{CANONICAL_URL}}#business"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "{{FAQ_Q1}}", "acceptedAnswer": {"@type": "Answer", "text": "{{FAQ_A1}}"}},
+          {"@type": "Question", "name": "{{FAQ_Q2}}", "acceptedAnswer": {"@type": "Answer", "text": "{{FAQ_A2}}"}},
+          {"@type": "Question", "name": "{{FAQ_Q3}}", "acceptedAnswer": {"@type": "Answer", "text": "{{FAQ_A3}}"}},
+          {"@type": "Question", "name": "{{FAQ_Q4}}", "acceptedAnswer": {"@type": "Answer", "text": "{{FAQ_A4}}"}}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: '{{BRAND_COLOR}}', 'brand-dark': '{{BRAND_DARK_COLOR}}' },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root { --brand: {{BRAND_COLOR}}; --brand-dark: {{BRAND_DARK_COLOR}}; --loco: cubic-bezier(0.215, 0.61, 0.355, 1); }
+    * { touch-action: manipulation; }
+    :focus-visible { outline: 3px solid var(--brand); outline-offset: 4px; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15px;
+      line-height: 1.4;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    @media (min-width: 700px)  { body { font-size: 17px; } }
+    @media (min-width: 1025px) { body { font-size: 18px; } }
+
+    a, button { transition: all 0.3s var(--loco); }
+
+    /* Sticky CTA */
+    .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 50; }
+
+    /* Scroll reveals */
+    .loco-reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.6s var(--loco), transform 0.6s var(--loco); }
+    .loco-reveal.in-view { opacity: 1; transform: translateY(0); }
+    .loco-reveal:nth-child(2) { transition-delay: 0.1s; }
+    .loco-reveal:nth-child(3) { transition-delay: 0.2s; }
+
+    /* RV double-line marks */
+    .line-mark { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
+    .line-mark span { display: block; height: 1px; background: var(--brand); width: 0; transition: width 0.5s var(--loco); }
+    .line-mark.in-view span:nth-child(1) { width: 36px; }
+    .line-mark.in-view span:nth-child(2) { width: 24px; transition-delay: 0.08s; }
+
+    /* Hero split grid */
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    @media (min-width: 768px) {
+      .hero-grid { grid-template-columns: 58fr 42fr; gap: 3rem; align-items: center; }
+    }
+
+    /* Hero right: callout stat box */
+    .callout-box {
+      border: 2px solid var(--brand);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      background: rgba(0,0,0,0.2);
+    }
+
+    /* Callout stat — the big scary number */
+    .callout-stat {
+      font-size: clamp(4.5rem, 12vw, 7rem);
+      font-weight: 900;
+      line-height: 1;
+      color: var(--brand);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Consequence blocks */
+    .consequence-block {
+      border-left: 4px solid var(--brand);
+      padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+      background: white;
+      margin-bottom: 1rem;
+    }
+    .consequence-stat {
+      font-size: 2.25rem;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 0.2rem;
+      color: var(--brand);
+    }
+    .consequence-cat {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+    }
+    .consequence-text { color: #374151; font-size: 0.875rem; line-height: 1.6; }
+
+    /* Before/After comparison */
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .comparison-col-good {
+      border-left: 4px solid #22c55e;
+      padding-left: 1rem;
+    }
+    .comparison-col-bad {
+      border-left: 4px solid #ef4444;
+      padding-left: 1rem;
+    }
+    .comparison-header {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .comparison-row {
+      font-size: 0.875rem;
+      line-height: 1.5;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .comparison-row:last-child { border-bottom: none; }
+    .comparison-row strong { display: block; font-weight: 700; color: #111827; font-size: 0.8rem; }
+    .comparison-row span { color: #6b7280; font-size: 0.8rem; }
+
+    /* FAQ accordion */
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 1.25rem 0; transition: border-left 0.3s var(--loco), padding-left 0.3s var(--loco); }
+    .faq-item[open] { border-left: 3px solid var(--brand); padding-left: 1rem; }
+    .faq-item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-weight: 600; color: #111827; font-size: 0.95rem; line-height: 1.4; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary .faq-chevron { flex-shrink: 0; width: 18px; height: 18px; color: #9ca3af; transition: transform 0.3s var(--loco); }
+    .faq-item[open] summary .faq-chevron { transform: rotate(180deg); }
+    .faq-item p { margin-top: 0.75rem; color: #4b5563; font-size: 0.875rem; line-height: 1.6; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .loco-reveal { opacity: 1; transform: none; transition: none; }
+      .line-mark span { width: 36px !important; transition: none; }
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- ── STICKY MOBILE CTA — PHONE only ── -->
+  <div class="sticky-cta px-4 py-3 md:hidden shadow-lg" style="background: var(--brand);">
+    <a href="tel:{{PHONE_NUMBER}}"
+       onclick="gtag('event','click_phone',{'niche':'{{NICHE_SLUG}}','location':'sticky'})"
+       class="flex w-full items-center justify-center gap-3 text-white font-black py-4 text-base">
+      <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z"/></svg>
+      {{PHONE_NUMBER}}
+    </a>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       HERO — dark split: massive H1 + giant callout stat
+       ══════════════════════════════════════════════════════════════════ -->
+  <section class="bg-gray-950 text-white px-5 pt-10 pb-12 md:px-16 md:pt-16 md:pb-20">
+    <div class="max-w-4xl mx-auto">
+      <div class="hero-grid">
+
+        <!-- LEFT: H1 + CTA -->
+        <div>
+          <!-- Category badge -->
+          <div class="inline-flex items-center gap-2 mb-5 text-xs font-bold uppercase tracking-[0.12em]" style="color: var(--brand);">
+            <span class="w-6 h-px inline-block" style="background: var(--brand);"></span>
+            {{CITY}} — {{SERVICE_NAME}}
+          </div>
+
+          <!-- H1 — massive -->
+          <h1 class="text-5xl md:text-7xl font-black leading-[0.9] mb-5">
+            {{H1_LINE1}}<br>
+            <span style="color: var(--brand);">{{H1_LINE2}}</span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-gray-300 text-base md:text-lg mb-8 max-w-md leading-relaxed">
+            {{SUBHEADLINE}}
+          </p>
+
+          <!-- PRIMARY CTA: PHONE -->
+          <a href="tel:{{PHONE_NUMBER}}"
+             onclick="gtag('event','click_phone',{'niche':'{{NICHE_SLUG}}','location':'hero'})"
+             class="w-full md:w-auto flex md:inline-flex items-center justify-center gap-3 text-white font-black text-lg py-5 px-8 mb-3 hover:opacity-90 transition-opacity"
+             style="background: var(--brand);">
+            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z"/></svg>
+            {{PHONE_NUMBER}}
+          </a>
+
+          <p class="text-gray-600 text-xs mt-3">{{TRUST_MICROCOPY}}</p>
+        </div>
+
+        <!-- RIGHT: giant consequence stat -->
+        <div class="callout-box">
+          <span class="callout-stat">{{HERO_CALLOUT_STAT}}</span>
+          <p class="text-xs font-bold uppercase tracking-[0.12em] text-white/40 mb-2">{{HERO_CALLOUT_LABEL}}</p>
+          <p class="text-sm text-white/60 leading-relaxed">{{HERO_CALLOUT_DESC}}</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       CONSEQUENCE BLOCKS — "O custo de não agir"
+       ══════════════════════════════════════════════════════════════════ -->
+  <section class="bg-slate-50 px-5 py-12 md:px-16 md:py-16">
+    <div class="max-w-3xl mx-auto">
+      <div class="loco-reveal mb-8">
+        <h2 class="text-2xl md:text-3xl font-black text-gray-900">{{CONSEQUENCE_HEADLINE}}</h2>
+        <p class="text-gray-500 text-sm mt-2">Dados concretos antes de decidir não agir.</p>
+      </div>
+      <div class="loco-reveal">
+        <div class="consequence-block">
+          <div class="consequence-stat">{{CONSEQUENCE_1_STAT}}</div>
+          <div class="consequence-cat">{{CONSEQUENCE_1_LABEL}}</div>
+          <p class="consequence-text">{{CONSEQUENCE_1_TEXT}}</p>
+        </div>
+      </div>
+      <div class="loco-reveal">
+        <div class="consequence-block">
+          <div class="consequence-stat">{{CONSEQUENCE_2_STAT}}</div>
+          <div class="consequence-cat">{{CONSEQUENCE_2_LABEL}}</div>
+          <p class="consequence-text">{{CONSEQUENCE_2_TEXT}}</p>
+        </div>
+      </div>
+      <div class="loco-reveal">
+        <div class="consequence-block">
+          <div class="consequence-stat">{{CONSEQUENCE_3_STAT}}</div>
+          <div class="consequence-cat">{{CONSEQUENCE_3_LABEL}}</div>
+          <p class="consequence-text">{{CONSEQUENCE_3_TEXT}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       BEFORE / AFTER — "Actua hoje" vs "Adia"
+       ══════════════════════════════════════════════════════════════════ -->
+  <section class="bg-white px-5 py-12 md:px-16">
+    <div class="max-w-3xl mx-auto loco-reveal">
+      <div class="comparison-grid">
+        <!-- Good column -->
+        <div class="comparison-col-good">
+          <div class="comparison-header text-green-600">
+            <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            Actua hoje
+          </div>
+          <div class="comparison-row">
+            <strong>Custo reduzido</strong>
+            <span>Intervenção a tempo, preço justo</span>
+          </div>
+          <div class="comparison-row">
+            <strong>Problema resolvido</strong>
+            <span>Situação controlada no próprio dia</span>
+          </div>
+          <div class="comparison-row">
+            <strong>Documentação emitida</strong>
+            <span>Fatura e relatório para seguro</span>
+          </div>
+        </div>
+        <!-- Bad column -->
+        <div class="comparison-col-bad">
+          <div class="comparison-header text-red-500">
+            <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+            Adia
+          </div>
+          <div class="comparison-row">
+            <strong>{{CONSEQUENCE_2_STAT}}+</strong>
+            <span>{{CONSEQUENCE_2_LABEL}}</span>
+          </div>
+          <div class="comparison-row">
+            <strong>{{CONSEQUENCE_1_STAT}}</strong>
+            <span>{{CONSEQUENCE_1_LABEL}}</span>
+          </div>
+          <div class="comparison-row">
+            <strong>Sem prova</strong>
+            <span>Processo de seguro difícil</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       SEO CONTENT — solution + atomic answer
+       ══════════════════════════════════════════════════════════════════ -->
+  <section class="bg-white px-5 py-12 md:px-16 md:py-16">
+    <div class="max-w-3xl mx-auto">
+      <div class="loco-reveal">
+        <div class="line-mark"><span></span><span></span></div>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-5">{{SOLUTION_HEADLINE}}</h2>
+        <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-8">{{ATOMIC_ANSWER_PARAGRAPH}}</p>
+        <p class="text-sm text-gray-400">
+          Ligue agora:
+          <a href="tel:{{PHONE_NUMBER}}"
+             onclick="gtag('event','click_phone',{'niche':'{{NICHE_SLUG}}','location':'inline-seo'})"
+             class="font-black hover:opacity-80 transition-opacity"
+             style="color: var(--brand);">{{PHONE_NUMBER}}</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       MID-PAGE CTA — brand color, large phone
+       ══════════════════════════════════════════════════════════════════ -->
+  <section class="text-white px-5 py-14 md:px-16 md:py-16 text-center" style="background: var(--brand);">
+    <div class="max-w-3xl mx-auto loco-reveal">
+      <p class="text-2xl md:text-4xl font-black mb-6 leading-tight">{{MID_CTA_HEADLINE}}</p>
+      <a href="tel:{{PHONE_NUMBER}}"
+         onclick="gtag('event','click_phone',{'niche':'{{NICHE_SLUG}}','location':'mid-page'})"
+         class="text-3xl md:text-5xl font-black block mb-4 text-white hover:opacity-90 transition-opacity"
+         style="text-shadow: 0 2px 8px rgba(0,0,0,0.25);">
+        {{PHONE_NUMBER}}
+      </a>
+      <p class="text-white/60 text-sm">{{TRUST_MICROCOPY}}</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       FAQ — accordion (SEO)
+       ══════════════════════════════════════════════════════════════════ -->
+  <section class="bg-white px-5 py-12 md:px-16 md:py-14">
+    <div class="max-w-3xl mx-auto">
+      <div class="loco-reveal mb-6">
+        <div class="line-mark"><span></span><span></span></div>
+        <h2 class="text-xl font-bold text-gray-900">Perguntas Frequentes</h2>
+      </div>
+      <div class="border-t border-gray-200">
+        <details class="faq-item">
+          <summary>{{FAQ_Q1}}<svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+          <p>{{FAQ_A1}}</p>
+        </details>
+        <details class="faq-item">
+          <summary>{{FAQ_Q2}}<svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+          <p>{{FAQ_A2}}</p>
+        </details>
+        <details class="faq-item">
+          <summary>{{FAQ_Q3}}<svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+          <p>{{FAQ_A3}}</p>
+        </details>
+        <details class="faq-item">
+          <summary>{{FAQ_Q4}}<svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+          <p>{{FAQ_A4}}</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       FINAL CTA — brand color, very large phone
+       ══════════════════════════════════════════════════════════════════ -->
+  <section class="text-white px-5 py-16 md:px-16 md:py-20 text-center" style="background: var(--brand);">
+    <div class="max-w-3xl mx-auto loco-reveal">
+      <h2 class="text-2xl md:text-4xl font-black mb-3">{{FINAL_CTA_HEADLINE}}</h2>
+      <p class="text-white/60 mb-8">{{FINAL_CTA_SUB}}</p>
+      <a href="tel:{{PHONE_NUMBER}}"
+         onclick="gtag('event','click_phone',{'niche':'{{NICHE_SLUG}}','location':'footer'})"
+         class="text-3xl md:text-5xl font-black block mb-6 text-white hover:opacity-90 transition-opacity"
+         style="text-shadow: 0 2px 8px rgba(0,0,0,0.25);">
+        {{PHONE_NUMBER}}
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-500 text-xs px-5 py-6 md:px-16 text-center">
+    <p class="mb-1">{{FOOTER_DESCRIPTION}}</p>
+    <p>{{CITY}} e Distrito | <a href="/privacidade" class="underline hover:text-gray-300">Política de Privacidade</a></p>
+  </footer>
+
+  <!-- Mobile padding -->
+  <div class="h-20 md:hidden"></div>
+
+  <!-- Locomotive scroll observer -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in-view');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.loco-reveal, .line-mark').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

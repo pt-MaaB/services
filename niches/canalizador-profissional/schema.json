@@ -1,0 +1,181 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Plumber",
+      "@id": "https://coimbraservicos.pt/canalizador/profissional/#business",
+      "name": "Canalizador Coimbra — Serviço Profissional Certificado",
+      "description": "Canalizador certificado em Coimbra. Orçamento gratuito, trabalho com garantia, sem surpresas na fatura. Urgente ou programado — Coimbra e Distrito.",
+      "url": "https://coimbraservicos.pt/canalizador/profissional/",
+      "telephone": "+351 917 493 600",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Santo António dos Olivais"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Almedina"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Cruz"
+        },
+        {
+          "@type": "Place",
+          "name": "São Martinho do Bispo"
+        },
+        {
+          "@type": "Place",
+          "name": "Condeixa-a-Nova"
+        },
+        {
+          "@type": "Place",
+          "name": "Mealhada"
+        },
+        {
+          "@type": "Place",
+          "name": "Penacova"
+        },
+        {
+          "@type": "Place",
+          "name": "Miranda do Corvo"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "€€"
+    },
+    {
+      "@type": "Service",
+      "name": "Canalizador Profissional em Coimbra",
+      "serviceType": "Canalizações, Reparações e Instalações",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Santo António dos Olivais"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Almedina"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Cruz"
+        },
+        {
+          "@type": "Place",
+          "name": "São Martinho do Bispo"
+        },
+        {
+          "@type": "Place",
+          "name": "Condeixa-a-Nova"
+        },
+        {
+          "@type": "Place",
+          "name": "Mealhada"
+        },
+        {
+          "@type": "Place",
+          "name": "Penacova"
+        },
+        {
+          "@type": "Place",
+          "name": "Miranda do Corvo"
+        }
+      ],
+      "provider": {
+        "@id": "https://coimbraservicos.pt/canalizador/profissional/#business"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O orçamento tem algum custo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. A visita de avaliação e o orçamento são gratuitos. Só pagará o trabalho depois de aprovar o orçamento detalhado. Em urgências nocturnas (após as 22h) pode aplicar-se uma taxa de deslocação de €20–€50."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O trabalho tem garantia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Todo o trabalho executado tem garantia. Em caso de problema relacionado com a intervenção realizada, voltamos sem custo adicional. A duração da garantia varia conforme o tipo de trabalho."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Usam materiais de qualidade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Utilizamos materiais certificados de marcas reconhecidas — tubagem em cobre ou multicamada, vedantes aprovados, acessórios com garantia de fabricante. O orçamento especifica sempre os materiais a utilizar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Trabalham ao fim de semana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Para urgências, o serviço funciona 24 horas, 7 dias por semana, incluindo feriados. Para obras programadas, trabalhamos também ao sábado de manhã mediante agendamento prévio."
+          }
+        }
+      ]
+    }
+  ]
+}

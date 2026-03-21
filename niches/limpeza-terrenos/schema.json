@@ -1,0 +1,213 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LandscapeService",
+      "@id": "https://coimbraservicos.pt/limpeza-terrenos/#business",
+      "name": "Limpeza de Terrenos Coimbra — DFCI Prazo 15 de Março",
+      "description": "Prazo DFCI a 15 de março em Coimbra — terreno por limpar arrisca multa até €5.000. Limpeza profissional com equipamento pesado. Orçamento gratuito.",
+      "url": "https://coimbraservicos.pt/limpeza-terrenos/",
+      "telephone": "+351 964 213 808",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Santo António dos Olivais"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Almedina"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Cruz"
+        },
+        {
+          "@type": "Place",
+          "name": "São Martinho do Bispo"
+        },
+        {
+          "@type": "Place",
+          "name": "Condeixa-a-Nova"
+        },
+        {
+          "@type": "Place",
+          "name": "Mealhada"
+        },
+        {
+          "@type": "Place",
+          "name": "Penacova"
+        },
+        {
+          "@type": "Place",
+          "name": "Miranda do Corvo"
+        },
+        {
+          "@type": "Place",
+          "name": "Lousã"
+        },
+        {
+          "@type": "Place",
+          "name": "Arganil"
+        },
+        {
+          "@type": "Place",
+          "name": "Góis"
+        },
+        {
+          "@type": "Place",
+          "name": "Pampilhosa da Serra"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "€€"
+    },
+    {
+      "@type": "Service",
+      "name": "Limpeza de Terrenos em Coimbra",
+      "serviceType": "Limpeza e Desmatação de Terrenos — DFCI",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Santo António dos Olivais"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Almedina"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Cruz"
+        },
+        {
+          "@type": "Place",
+          "name": "São Martinho do Bispo"
+        },
+        {
+          "@type": "Place",
+          "name": "Condeixa-a-Nova"
+        },
+        {
+          "@type": "Place",
+          "name": "Mealhada"
+        },
+        {
+          "@type": "Place",
+          "name": "Penacova"
+        },
+        {
+          "@type": "Place",
+          "name": "Miranda do Corvo"
+        },
+        {
+          "@type": "Place",
+          "name": "Lousã"
+        },
+        {
+          "@type": "Place",
+          "name": "Arganil"
+        },
+        {
+          "@type": "Place",
+          "name": "Góis"
+        },
+        {
+          "@type": "Place",
+          "name": "Pampilhosa da Serra"
+        }
+      ],
+      "provider": {
+        "@id": "https://coimbraservicos.pt/limpeza-terrenos/#business"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O prazo DFCI é realmente 15 de março em Coimbra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Em Coimbra e na maioria dos concelhos do Distrito, o prazo para limpeza de terrenos em zonas DFCI é 15 de março. Alguns municípios podem ter prazos ligeiramente diferentes — confirme sempre no site da câmara municipal do seu concelho."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a multa por terreno não limpo no prazo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para particulares, a coima vai de €140 a €5.000 conforme a extensão do incumprimento e a zona de risco. Para empresas, os valores são mais elevados. Além da coima, a câmara pode mandar executar a limpeza e cobrar os custos ao proprietário — geralmente mais caro do que contratar diretamente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O terreno precisa de estar limpo até ao solo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. A lei exige gestão de combustível — corte de arbustos e matos à altura regulamentar, não necessariamente terraplanagem. O objetivo é reduzir o combustível disponível para incêndio, não remover toda a vegetação. O técnico avalia e indica o mínimo regulamentar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Podemos tratar terrenos de grande dimensão em Coimbra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Trabalhamos com trator, roçadeira de arrasto e equipamento para terrenos de 1 a 50+ hectares. Para grandes extensões, fazemos orçamento por visita ao local e confirmação da acessibilidade. Agenda de março ocupa rapidamente — contacte com antecedência."
+          }
+        }
+      ]
+    }
+  ]
+}

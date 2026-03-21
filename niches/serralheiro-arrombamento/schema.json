@@ -1,0 +1,181 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Locksmith",
+      "@id": "https://coimbraservicos.pt/serralheiro/arrombamento/#business",
+      "name": "Serralheiro Coimbra — Arrombamentos e Reforço de Segurança",
+      "description": "Porta arrombada em Coimbra? Intervenção urgente em 30 min — substituição de fechadura, reparação de porta e orientação para seguro. Coimbra e Distrito.",
+      "url": "https://coimbraservicos.pt/serralheiro/arrombamento/",
+      "telephone": "+351 966 077 317",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Santo António dos Olivais"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Almedina"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Cruz"
+        },
+        {
+          "@type": "Place",
+          "name": "São Martinho do Bispo"
+        },
+        {
+          "@type": "Place",
+          "name": "Condeixa-a-Nova"
+        },
+        {
+          "@type": "Place",
+          "name": "Mealhada"
+        },
+        {
+          "@type": "Place",
+          "name": "Penacova"
+        },
+        {
+          "@type": "Place",
+          "name": "Miranda do Corvo"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "€€"
+    },
+    {
+      "@type": "Service",
+      "name": "Serralheiro em Coimbra",
+      "serviceType": "Reparação de Portas Arrombadas e Reforço de Segurança",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Santo António dos Olivais"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Almedina"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Cruz"
+        },
+        {
+          "@type": "Place",
+          "name": "São Martinho do Bispo"
+        },
+        {
+          "@type": "Place",
+          "name": "Condeixa-a-Nova"
+        },
+        {
+          "@type": "Place",
+          "name": "Mealhada"
+        },
+        {
+          "@type": "Place",
+          "name": "Penacova"
+        },
+        {
+          "@type": "Place",
+          "name": "Miranda do Corvo"
+        }
+      ],
+      "provider": {
+        "@id": "https://coimbraservicos.pt/serralheiro/arrombamento/#business"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O seguro cobre a substituição de fechadura após arrombamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A maioria dos seguros multirriscos habitação cobre a substituição de fechaduras após arrombamento. É necessário participar o sinistro à seguradora dentro do prazo (normalmente 8 dias) e apresentar fatura do serralheiro com descrição dos danos. Guardamos toda a documentação necessária."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Conseguem reparar o marco da porta danificado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Em arrombamentos por força, o marco é normalmente o que cede primeiro. Reparamos marcos de madeira e metálicos, com reforço interno quando necessário. Em casos de danos extensos, podemos instalar novo marco ou revestimento metálico de reforço."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que fechadura recomendam para substituição após arrombamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Recomendamos cilindro europeu de classe 4 com anti-bumping, anti-picking e anti-perfuração, de marcas certificadas como Mul-T-Lock, ISEO ou AXA. Para segurança máxima, complementar com fecho de segurança adicional (ferrolho) no terço inferior da porta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O assaltante pode voltar — como prevenir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Estatisticamente, habitações assaltadas têm o dobro da probabilidade de reincidência no prazo de 6 meses. Para além de reforçar a fechadura, recomendamos: instalar ferrolho adicional, avaliar iluminação exterior com sensor de movimento, e notificar a junta de freguesia para patrulha acrescida."
+          }
+        }
+      ]
+    }
+  ]
+}
