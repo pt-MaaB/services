@@ -4,27 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Serviços Urgentes em Coimbra | CoimbraServiços</title>
-  <meta name="description" content="Encontre profissionais de confiança em Coimbra para serviços urgentes: canalizador, eletricista, serralheiro, controlo de pragas e limpeza de terrenos. Resposta rápida, 24h.">
+  <meta name="description" content="Encontre profissionais de confiança em Coimbra para emergências: canalizador, eletricista, serralheiro, controlo de pragas, limpeza de terrenos. Resposta rápida, 24h.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://coimbraservicos.pt/">
   <meta property="og:title" content="Serviços Urgentes em Coimbra | CoimbraServiços">
-  <meta property="og:description" content="Profissionais locais para emergências em casa. Canalizador, Eletricista, Serralheiro, Controlo de Pragas, Limpeza de Terrenos.">
+  <meta property="og:description" content="Profissionais locais para emergências domésticas. Disponibilidade 24h, resposta em menos de 30 minutos.">
   <meta property="og:url" content="https://coimbraservicos.pt/">
   <meta property="og:type" content="website">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: { brand: '#e36c2f' },
-          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
-        }
-      }
-    }
-  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DJBV60SYQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -38,106 +27,238 @@
     "@type": "WebSite",
     "name": "CoimbraServiços",
     "url": "https://coimbraservicos.pt",
-    "description": "Diretório de serviços urgentes em Coimbra",
-    "inLanguage": "pt-PT"
+    "description": "Serviços urgentes em Coimbra"
   }
   </script>
   <style>
-    body { background: #0a0a0a; color: #f0f0f0; }
-    .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
-    .card-hover:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(227,108,47,0.15); }
+    :root {
+      --loco: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    * {
+      touch-action: manipulation;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    .rv-mark {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+
+    .rv-mark::before,
+    .rv-mark::after {
+      content: '';
+      position: absolute;
+      bottom: -1.5rem;
+      left: 0;
+      height: 2px;
+      background: #22c55e;
+      opacity: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: all 0.8s var(--loco);
+    }
+
+    .rv-mark::before {
+      width: 36px;
+    }
+
+    .rv-mark::after {
+      width: 24px;
+      margin-left: 40px;
+      animation-delay: 0.1s;
+    }
+
+    .rv-mark.visible::before,
+    .rv-mark.visible::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
+    .loco-reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.7s var(--loco);
+    }
+
+    .loco-reveal.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .loco-reveal:nth-child(1) { transition-delay: 0ms; }
+    .loco-reveal:nth-child(2) { transition-delay: 80ms; }
+    .loco-reveal:nth-child(3) { transition-delay: 160ms; }
+    .loco-reveal:nth-child(4) { transition-delay: 240ms; }
+    .loco-reveal:nth-child(5) { transition-delay: 320ms; }
+    .loco-reveal:nth-child(6) { transition-delay: 400ms; }
+
+    .btn-solid-elevation {
+      position: relative;
+      background: #22c55e;
+      color: white;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 0 #15803d, 0 8px 16px rgba(34, 197, 94, 0.25);
+    }
+
+    .btn-solid-elevation:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 0 #15803d, 0 12px 24px rgba(34, 197, 94, 0.35);
+    }
+
+    .btn-solid-elevation:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 #15803d, 0 4px 8px rgba(34, 197, 94, 0.15);
+    }
+
+    .service-card {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.02);
+      transition: all 0.4s var(--loco);
+    }
+
+    .service-card:hover {
+      border-color: rgba(34, 197, 94, 0.3);
+      background: rgba(34, 197, 94, 0.05);
+      transform: translateY(-4px);
+    }
+
+    .service-card:focus-visible {
+      outline: 2px solid #22c55e;
+      outline-offset: 2px;
+    }
+
+    @media (max-width: 640px) {
+      .sticky-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        padding: 12px 16px;
+        background: linear-gradient(to top, #0a0a0a, transparent);
+      }
+
+      body {
+        padding-bottom: 60px;
+      }
+    }
   </style>
 </head>
-<body class="font-sans antialiased">
+<body>
 
   <!-- Header -->
-  <header class="border-b border-white/10 px-6 py-5">
+  <header class="border-b border-white/5 px-6 py-5 sticky top-0 z-40 bg-black/80 backdrop-blur-sm">
     <div class="max-w-5xl mx-auto flex items-center justify-between">
       <div>
-        <span class="text-xl font-bold text-white tracking-tight">Coimbra<span class="text-brand">Serviços</span></span>
-        <p class="text-xs text-white/40 mt-0.5">Profissionais locais · Resposta rápida</p>
+        <span class="text-xl font-bold text-white tracking-tight">Coimbra<span class="text-emerald-500">Serviços</span></span>
+        <p class="text-xs text-white/40 mt-0.5">24 horas · Resposta rápida</p>
       </div>
       <a href="tel:+351917493600"
-         onclick="gtag('event','click_phone',{service:'home'})"
-         class="bg-brand text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-orange-600 transition-colors">
+         onclick="gtag('event','click_phone',{service:'header'})"
+         class="btn-solid-elevation px-5 py-2.5 rounded text-sm">
         Ligar Agora
       </a>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="px-6 pt-16 pb-12 text-center">
-    <div class="max-w-2xl mx-auto">
-      <div class="inline-block bg-brand/10 border border-brand/30 text-brand text-xs font-semibold px-3 py-1 rounded-full mb-6 tracking-wide uppercase">
-        Serviços 24h — Coimbra e Região
+  <section class="relative px-6 py-20 md:py-28 overflow-hidden">
+    <div class="max-w-3xl mx-auto">
+      <div class="loco-reveal">
+        <h1 class="rv-mark text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+          Emergência em casa?
+        </h1>
       </div>
-      <h1 class="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-5">
-        Precisa de ajuda urgente<br>em casa?
-      </h1>
-      <p class="text-lg text-white/60 leading-relaxed">
-        Encontre o profissional certo para a sua emergência. Serviços verificados,
-        resposta rápida, disponíveis hoje.
-      </p>
+      <div class="loco-reveal">
+        <p class="text-lg sm:text-xl text-white/60 leading-relaxed mb-8 max-w-2xl">
+          Profissionais verificados, resposta em menos de 30 minutos. Disponível 24 horas em Coimbra e região.
+        </p>
+      </div>
+      <div class="loco-reveal">
+        <a href="tel:+351917493600"
+           onclick="gtag('event','click_phone',{service:'hero'})"
+           class="btn-solid-elevation inline-block px-7 py-4 rounded text-lg">
+          Ligar Agora
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- Services Grid -->
-  <section class="px-6 pb-16">
+  <!-- Services -->
+  <section class="px-6 py-16 md:py-24">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-xs font-semibold text-white/40 uppercase tracking-widest mb-6 text-center">Escolha o seu serviço</h2>
+      <div class="mb-12">
+        <h2 class="rv-mark text-2xl md:text-3xl font-bold text-white">Escolha o serviço</h2>
+      </div>
+
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
-        <!-- Canalizador -->
-        <a href="/canalizador/" class="card-hover block bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-brand/40">
-          <div class="text-3xl mb-4">🔧</div>
+        <a href="/canalizador/"
+           class="service-card loco-reveal rounded-2xl p-6 block group focus:outline-none">
+          <div class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🔧</div>
           <h3 class="text-lg font-bold text-white mb-2">Canalizador</h3>
-          <p class="text-sm text-white/50 mb-4">Fugas, entupimentos, avarias de canalização. Urgente 24h.</p>
-          <span class="text-brand text-sm font-semibold">Ver serviço →</span>
+          <p class="text-sm text-white/50 mb-4">Fugas, entupimentos, avarias. Resposta urgente.</p>
+          <span class="text-emerald-500 text-sm font-semibold">Saber mais →</span>
         </a>
 
-        <!-- Eletricista -->
-        <a href="/eletricista/" class="card-hover block bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-brand/40">
-          <div class="text-3xl mb-4">⚡</div>
+        <a href="/eletricista/"
+           class="service-card loco-reveal rounded-2xl p-6 block group focus:outline-none">
+          <div class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">⚡</div>
           <h3 class="text-lg font-bold text-white mb-2">Eletricista</h3>
-          <p class="text-sm text-white/50 mb-4">Curto-circuitos, instalações, quadros elétricos. Certificado.</p>
-          <span class="text-brand text-sm font-semibold">Ver serviço →</span>
+          <p class="text-sm text-white/50 mb-4">Curtos, instalações, quadros. Certificado.</p>
+          <span class="text-emerald-500 text-sm font-semibold">Saber mais →</span>
         </a>
 
-        <!-- Serralheiro -->
-        <a href="/serralheiro/" class="card-hover block bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-brand/40">
-          <div class="text-3xl mb-4">🔑</div>
+        <a href="/serralheiro/"
+           class="service-card loco-reveal rounded-2xl p-6 block group focus:outline-none">
+          <div class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🔑</div>
           <h3 class="text-lg font-bold text-white mb-2">Serralheiro</h3>
-          <p class="text-sm text-white/50 mb-4">Portas bloqueadas, fechaduras, portões. Abertura sem danos.</p>
-          <span class="text-brand text-sm font-semibold">Ver serviço →</span>
+          <p class="text-sm text-white/50 mb-4">Portas bloqueadas, fechaduras, portões.</p>
+          <span class="text-emerald-500 text-sm font-semibold">Saber mais →</span>
         </a>
 
-        <!-- Controlo de Pragas -->
-        <a href="/pragas/" class="card-hover block bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-brand/40">
-          <div class="text-3xl mb-4">🛡️</div>
+        <a href="/pragas/"
+           class="service-card loco-reveal rounded-2xl p-6 block group focus:outline-none">
+          <div class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🛡️</div>
           <h3 class="text-lg font-bold text-white mb-2">Controlo de Pragas</h3>
-          <p class="text-sm text-white/50 mb-4">Ratos, baratas, formigas, vespas. Tratamento profissional.</p>
-          <span class="text-brand text-sm font-semibold">Ver serviço →</span>
+          <p class="text-sm text-white/50 mb-4">Ratos, baratas, formigas. Tratamento profissional.</p>
+          <span class="text-emerald-500 text-sm font-semibold">Saber mais →</span>
         </a>
 
-        <!-- Limpeza de Terrenos -->
-        <a href="/limpeza-terrenos/" class="card-hover block bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-brand/40">
-          <div class="text-3xl mb-4">🌿</div>
+        <a href="/limpeza-terrenos/"
+           class="service-card loco-reveal rounded-2xl p-6 block group focus:outline-none">
+          <div class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🌿</div>
           <h3 class="text-lg font-bold text-white mb-2">Limpeza de Terrenos</h3>
-          <p class="text-sm text-white/50 mb-4">Desmatação, limpeza DFCI. Evite multas até €5.000.</p>
-          <span class="text-brand text-sm font-semibold">Ver serviço →</span>
+          <p class="text-sm text-white/50 mb-4">Desmatação, DFCI. Evite multas até €5.000.</p>
+          <span class="text-emerald-500 text-sm font-semibold">Saber mais →</span>
         </a>
 
-        <!-- CTA Card -->
-        <div class="bg-brand/10 border border-brand/30 rounded-2xl p-6 flex flex-col justify-between">
+        <div class="service-card loco-reveal rounded-2xl p-6 border border-emerald-500/20 bg-emerald-500/5 flex flex-col justify-between">
           <div>
-            <div class="text-3xl mb-4">📞</div>
-            <h3 class="text-lg font-bold text-white mb-2">Não sabe qual escolher?</h3>
-            <p class="text-sm text-white/50 mb-4">Ligue e descrevemos a situação. Encaminhamos para o profissional certo.</p>
+            <div class="text-4xl mb-4">📱</div>
+            <h3 class="text-lg font-bold text-white mb-2">Não tem a certeza?</h3>
+            <p class="text-sm text-white/50 mb-4">Descreva a situação. Encaminhamos para o profissional certo.</p>
           </div>
           <a href="tel:+351917493600"
-             onclick="gtag('event','click_phone',{service:'home_cta'})"
-             class="bg-brand text-white text-sm font-semibold px-4 py-2.5 rounded-lg text-center hover:bg-orange-600 transition-colors">
-            Ligar Agora
+             onclick="gtag('event','click_phone',{service:'services_cta'})"
+             class="btn-solid-elevation px-4 py-2.5 rounded text-sm text-center block">
+            Ligar
           </a>
         </div>
 
@@ -145,34 +266,70 @@
     </div>
   </section>
 
-  <!-- Trust bar -->
-  <section class="border-t border-white/10 px-6 py-10">
+  <!-- Trust signals -->
+  <section class="px-6 py-16 md:py-20 bg-white/5 border-y border-white/5">
     <div class="max-w-4xl mx-auto">
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
-        <div>
-          <div class="text-2xl font-extrabold text-white">24h</div>
-          <div class="text-xs text-white/40 mt-1">Disponibilidade</div>
+      <div class="grid grid-cols-3 gap-8 text-center">
+        <div class="loco-reveal">
+          <div class="text-4xl md:text-5xl font-extrabold text-emerald-500 mb-2">24h</div>
+          <div class="text-xs md:text-sm text-white/40 uppercase tracking-wide">Disponibilidade</div>
         </div>
-        <div>
-          <div class="text-2xl font-extrabold text-white">&lt;30min</div>
-          <div class="text-xs text-white/40 mt-1">Tempo de resposta</div>
+        <div class="loco-reveal">
+          <div class="text-4xl md:text-5xl font-extrabold text-emerald-500 mb-2">&lt;30min</div>
+          <div class="text-xs md:text-sm text-white/40 uppercase tracking-wide">Resposta</div>
         </div>
-        <div>
-          <div class="text-2xl font-extrabold text-white">5</div>
-          <div class="text-xs text-white/40 mt-1">Serviços disponíveis</div>
-        </div>
-        <div>
-          <div class="text-2xl font-extrabold text-white">Coimbra</div>
-          <div class="text-xs text-white/40 mt-1">e região</div>
+        <div class="loco-reveal">
+          <div class="text-4xl md:text-5xl font-extrabold text-emerald-500 mb-2">5</div>
+          <div class="text-xs md:text-sm text-white/40 uppercase tracking-wide">Serviços</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="border-t border-white/10 px-6 py-8 text-center">
-    <p class="text-xs text-white/30">© 2026 CoimbraServiços · Todos os serviços são prestados por profissionais independentes</p>
+  <footer class="px-6 py-8 text-center">
+    <p class="text-xs text-white/30">© 2026 CoimbraServiços · Profissionais independentes verificados</p>
   </footer>
+
+  <!-- Mobile CTA bar -->
+  <div class="sticky-cta hidden sm:hidden">
+    <a href="tel:+351917493600"
+       onclick="gtag('event','click_phone',{service:'mobile_cta'})"
+       class="btn-solid-elevation block w-full py-3 rounded-none text-center text-white font-semibold">
+      Ligar Agora
+    </a>
+  </div>
+
+  <script>
+    // Intersection Observer for scroll reveals
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          // Trigger RV marks
+          const mark = entry.target.querySelector('.rv-mark');
+          if (mark) mark.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all reveal elements
+    document.querySelectorAll('.loco-reveal').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Initial RV marks for hero
+    document.querySelectorAll('.rv-mark').forEach((mark, idx) => {
+      if (idx === 0) {
+        setTimeout(() => mark.classList.add('visible'), 300);
+      }
+    });
+  </script>
 
 </body>
 </html>
