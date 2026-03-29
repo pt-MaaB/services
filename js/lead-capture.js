@@ -9,7 +9,7 @@
   // Config
   const TELEGRAM_BOT_TOKEN = '8540837308:AAHaP8eFN68V9KjLlaouiE0xOZbmVUPKSpY';
   const TELEGRAM_CHAT_ID = '1047779502';
-  const GOOGLE_SHEETS_URL = '';   // Apps Script web app URL (set after setup)
+  const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbxBdGyG8IYSNKt_tHWk9ld3XKJkiOJu15tDvH4S7kugg5kYBWS72_HNx9csb5eRUso_/exec';
 
   /**
    * Main form handler
