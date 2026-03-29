@@ -7,8 +7,8 @@
   'use strict';
 
   // Config
-  const TELEGRAM_BOT_TOKEN = '';  // Set via env or hardcode for now
-  const TELEGRAM_CHAT_ID = '';    // Founder's chat ID
+  const TELEGRAM_BOT_TOKEN = '8540837308:AAHaP8eFN68V9KjLlaouiE0xOZbmVUPKSpY';
+  const TELEGRAM_CHAT_ID = '1047779502';
   const GOOGLE_SHEETS_URL = '';   // Apps Script web app URL (set after setup)
 
   /**
