@@ -1,0 +1,299 @@
+/* Blog & Article Styles — coimbraservicos.pt */
+
+.blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+/* Article Header */
+.article-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.article-header h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.article-meta {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.article-meta .niche-tag {
+  display: inline-block;
+  background: #f59e0b;
+  color: #fff;
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+
+/* Article Body */
+.article-body h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #111;
+}
+
+.article-body h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.article-body p {
+  margin-bottom: 1rem;
+}
+
+.article-body ul, .article-body ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.article-body li {
+  margin-bottom: 0.5rem;
+}
+
+.article-body strong {
+  color: #111;
+}
+
+/* CTA Box */
+.cta-box {
+  background: linear-gradient(135deg, #065f46, #047857);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.cta-box p {
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.cta-box .cta-whatsapp {
+  display: inline-block;
+  background: #25d366;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: transform 0.2s;
+}
+
+.cta-box .cta-whatsapp:hover {
+  transform: scale(1.05);
+}
+
+.cta-box .cta-alt {
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
+  opacity: 0.9;
+}
+
+.cta-box .cta-alt a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Lead Capture Form */
+.lead-form {
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.lead-form h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.lead-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lead-form input[type="text"],
+.lead-form input[type="tel"],
+.lead-form input[type="email"] {
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.lead-form input:focus {
+  border-color: #047857;
+  box-shadow: 0 0 0 3px rgba(4, 120, 87, 0.1);
+}
+
+.lead-form button {
+  background: #047857;
+  color: #fff;
+  padding: 0.875rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.lead-form button:hover {
+  background: #065f46;
+}
+
+/* FAQ Accordion */
+.faq-section {
+  margin: 2rem 0;
+}
+
+.faq-section details {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.faq-section summary {
+  padding: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #f8fafc;
+  list-style: none;
+}
+
+.faq-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-section summary::before {
+  content: '+';
+  margin-right: 0.75rem;
+  font-weight: 700;
+  color: #047857;
+}
+
+.faq-section details[open] summary::before {
+  content: '−';
+}
+
+.faq-section details div {
+  padding: 0 1rem 1rem;
+  color: #444;
+}
+
+/* Blog Index Cards */
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 640px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.blog-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.blog-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.blog-card .niche-tag {
+  display: inline-block;
+  background: #f59e0b;
+  color: #fff;
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.blog-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.blog-card h3 a {
+  color: #111;
+  text-decoration: none;
+}
+
+.blog-card h3 a:hover {
+  color: #047857;
+}
+
+.blog-card p {
+  color: #666;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-card .read-more {
+  color: #047857;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.breadcrumbs a {
+  color: #047857;
+  text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .article-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .blog-container {
+    padding: 1rem 0.75rem;
+  }
+}
