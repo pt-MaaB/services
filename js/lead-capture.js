@@ -124,14 +124,16 @@
   /**
    * Send lead notification to Telegram
    */
-  function sendToTelegram(data) {
+  function sendToTelegram(data, icon) {
     if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) return;
-    var text = '🔔 *Novo Lead — coimbraservicos.pt*\n\n'
-      + '👤 ' + data.name + '\n'
-      + '📱 ' + data.phone + '\n'
+    var ico = icon || '🔔';
+    var text = ico + ' *Novo Lead — coimbraservicos.pt*\n\n'
+      + (data.name ? '👤 ' + data.name + '\n' : '')
+      + (data.phone ? '📱 ' + data.phone + '\n' : '')
       + (data.email ? '📧 ' + data.email + '\n' : '')
-      + '🔧 ' + data.niche + '\n'
-      + '📄 ' + data.source_page + '\n'
+      + '🔧 ' + (data.service || data.niche || '') + '\n'
+      + '📄 ' + (data.page || data.source_page || '') + '\n'
+      + (data.utm_source && data.utm_source !== 'direct' ? '🔗 ' + data.utm_source + ' / ' + data.utm_medium + '\n' : '')
       + '🕐 ' + new Date().toLocaleString('pt-PT');
 
     fetch('https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendMessage', {
@@ -146,35 +148,65 @@
   }
 
   /**
-   * Track WhatsApp clicks as leads
+   * Infer niche from pathname (e.g. /canalizador/ → canalizador)
    */
-  document.addEventListener('click', function (e) {
-    var link = e.target.closest('a[href*="wa.me"]');
-    if (!link) return;
-
-    var niche = document.querySelector('[name="niche"]');
-    if (typeof gtag === 'function') {
-      gtag('event', 'click_whatsapp', {
-        event_category: 'lead_capture',
-        event_label: niche ? niche.value : 'unknown',
-        source_page: window.location.pathname
-      });
-    }
-  });
+  function getNiche() {
+    var parts = window.location.pathname.replace(/^\/|\/$/g, '').split('/');
+    return parts[0] || 'homepage';
+  }
 
   /**
-   * Track phone clicks as leads
+   * Build a click-lead payload (no name/phone — visitor called us)
+   */
+  function buildClickLead(type) {
+    return {
+      timestamp: new Date().toISOString(),
+      name: '',
+      phone: '',
+      email: '',
+      service: getNiche(),
+      page: window.location.pathname,
+      utm_source: getParam('utm_source') || 'direct',
+      utm_medium: getParam('utm_medium') || 'none',
+      utm_campaign: getParam('utm_campaign') || '',
+      utm_keyword: getParam('utm_keyword') || '',
+      source_type: type,
+      status: 'Clique ' + (type === 'tel' ? 'Tel' : 'WA')
+    };
+  }
+
+  /**
+   * Track phone clicks as leads → Sheets + Telegram
    */
   document.addEventListener('click', function (e) {
     var link = e.target.closest('a[href^="tel:"]');
     if (!link) return;
 
+    var data = buildClickLead('tel');
+
     if (typeof gtag === 'function') {
-      gtag('event', 'click_phone', {
-        event_category: 'lead_capture',
-        source_page: window.location.pathname
-      });
+      gtag('event', 'click_phone', { event_category: 'lead_capture', niche: data.service });
     }
+
+    sendToGoogleSheets(data);
+    sendToTelegram(data, '📞');
+  });
+
+  /**
+   * Track WhatsApp clicks as leads → Sheets + Telegram
+   */
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href*="wa.me"]');
+    if (!link) return;
+
+    var data = buildClickLead('whatsapp');
+
+    if (typeof gtag === 'function') {
+      gtag('event', 'click_whatsapp', { event_category: 'lead_capture', niche: data.service });
+    }
+
+    sendToGoogleSheets(data);
+    sendToTelegram(data, '💬');
   });
 
 })();
