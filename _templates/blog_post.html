@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_PT">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/blog.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{GA4_ID}}"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{GA4_ID}}');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{TITLE_JSON}}",
+    "description": "{{META_DESCRIPTION_JSON}}",
+    "datePublished": "{{DATE_PUBLISHED}}",
+    "dateModified": "{{DATE_MODIFIED}}",
+    "author": {"@type": "Organization", "name": "coimbraservicos.pt"},
+    "publisher": {
+      "@type": "Organization",
+      "name": "coimbraservicos.pt",
+      "url": "https://coimbraservicos.pt"
+    },
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "{{CANONICAL_URL}}"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": {{FAQ_SCHEMA_JSON}}
+  }
+  </script>
+</head>
+<body>
+  <div class="blog-container">
+    <nav class="breadcrumbs">
+      <a href="/">Início</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; <a href="{{NICHE_LANDING}}">{{NICHE_DISPLAY}}</a> &rsaquo; {{BREADCRUMB_LEAF}}
+    </nav>
+
+    <header class="article-header">
+      <h1>{{H1}}</h1>
+      <p class="article-meta">
+        <span class="niche-tag">{{NICHE_DISPLAY}}</span>
+        Publicado a {{DATE_HUMAN}} &bull; Leitura: {{READ_MIN}} min
+      </p>
+    </header>
+
+    <article class="article-body">
+      {{ARTICLE_BODY_HTML}}
+
+      <!-- CTA Box (mid-article) -->
+      <div class="cta-box">
+        <p><strong>Precisa de {{SERVICE_NOUN}} em Coimbra?</strong></p>
+        <p>Peça já o seu orçamento gratuito — resposta em 30 minutos.</p>
+        <a href="https://wa.me/{{WA_E164}}?text={{WA_PREFILL_ENC}}" class="cta-whatsapp" onclick="gtag('event','click_whatsapp',{event_label:'{{NICHE_SLUG}}',location:'article_cta'})">Pedir Orçamento no WhatsApp</a>
+        <p class="cta-alt">Ou ligue: <a href="tel:{{PHONE_E164}}" onclick="gtag('event','click_phone',{event_label:'{{NICHE_SLUG}}',location:'article_cta'})">{{PHONE_NATIONAL}}</a></p>
+      </div>
+
+      <!-- Lead Capture Form -->
+      <div class="lead-form" id="lead-form">
+        <h3>Receba Orçamento Gratuito</h3>
+        <form id="contact-form" onsubmit="return captureLead(event)">
+          <input type="text" name="name" placeholder="O seu nome" required>
+          <input type="tel" name="phone" placeholder="Telemóvel (ex: 912 345 678)" required>
+          <input type="email" name="email" placeholder="Email (opcional)">
+          <input type="hidden" name="niche" value="{{NICHE_SLUG}}">
+          <input type="hidden" name="source" value="{{ARTICLE_SLUG}}">
+          <button type="submit">Pedir Orçamento Gratuito</button>
+        </form>
+        <p style="text-align:center;font-size:0.75rem;color:#888;margin-top:0.5rem;">Os seus dados são confidenciais e usados apenas para contacto.</p>
+      </div>
+
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <h2>Perguntas Frequentes</h2>
+        {{FAQ_HTML}}
+      </section>
+
+      <!-- Final CTA -->
+      <div class="cta-box">
+        <p><strong>Não espere mais.</strong> Contacte-nos agora e resolva o seu problema hoje.</p>
+        <a href="https://wa.me/{{WA_E164}}?text={{WA_PREFILL_ENC}}" class="cta-whatsapp" onclick="gtag('event','click_whatsapp',{event_label:'{{NICHE_SLUG}}',location:'article_bottom'})">Contactar Agora</a>
+      </div>
+    </article>
+
+    {{RELATED_HTML}}
+
+    <footer style="margin-top:3rem;padding-top:1.5rem;border-top:1px solid #e2e8f0;text-align:center;color:#888;font-size:0.8rem;">
+      <p>&copy; {{YEAR}} coimbraservicos.pt — Todos os direitos reservados</p>
+      <p><a href="/" style="color:{{NICHE_COLOR}};text-decoration:none;">Voltar ao início</a> &bull; <a href="/blog/" style="color:{{NICHE_COLOR}};text-decoration:none;">Ver todos os artigos</a></p>
+    </footer>
+  </div>
+
+  <script src="/js/lead-capture.js"></script>
+</body>
+</html>
