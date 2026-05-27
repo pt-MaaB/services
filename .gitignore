@@ -1,3 +1,10 @@
 .DS_Store
 **/.DS_Store
 assets/
+
+# RankRent automation state (LLM second-brain — never commit)
+.state/
+.tmp/
+*.local.json
+__pycache__/
+*.pyc

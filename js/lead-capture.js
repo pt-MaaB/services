@@ -1,15 +1,18 @@
 /**
  * Lead Capture System — coimbraservicos.pt
- * Captures form submissions, fires GA4 events, sends to Google Sheets + Telegram
+ *
+ * Captures form submissions + WhatsApp/phone clicks, fires GA4 events,
+ * and POSTs to the Google Apps Script endpoint. The Apps Script (server-side)
+ * forwards to Google Sheets AND Telegram, keeping the bot token off the client.
  */
 
 (function () {
   'use strict';
 
-  // Config
-  const TELEGRAM_BOT_TOKEN = '8540837308:AAHaP8eFN68V9KjLlaouiE0xOZbmVUPKSpY';
-  const TELEGRAM_CHAT_ID = '1047779502';
-  const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbxBdGyG8IYSNKt_tHWk9ld3XKJkiOJu15tDvH4S7kugg5kYBWS72_HNx9csb5eRUso_/exec';
+  // The Apps Script endpoint is intentionally public — it only accepts POST
+  // with lead data and never returns secrets. The Telegram bot token lives
+  // in Script Properties (server-side only), never in this file.
+  const ENDPOINT = 'https://script.google.com/macros/s/AKfycbxBdGyG8IYSNKt_tHWk9ld3XKJkiOJu15tDvH4S7kugg5kYBWS72_HNx9csb5eRUso_/exec';
 
   /**
    * Main form handler
@@ -29,10 +32,10 @@
       source_type: 'form',
       utm_source: getParam('utm_source') || 'direct',
       utm_medium: getParam('utm_medium') || 'none',
-      status: 'new'
+      status: 'new',
+      icon: '🔔'
     };
 
-    // Validate
     if (!data.name || !data.phone) {
       showMessage(form, 'Por favor preencha o nome e telemóvel.', 'error');
       return false;
@@ -43,7 +46,6 @@
       return false;
     }
 
-    // Fire GA4 event
     if (typeof gtag === 'function') {
       gtag('event', 'generate_lead', {
         event_category: 'lead_capture',
@@ -53,15 +55,11 @@
       });
     }
 
-    // Send to all backends
-    sendToGoogleSheets(data);
-    sendToTelegram(data);
+    sendToEndpoint(data);
 
-    // Show success
     showMessage(form, 'Obrigado! Vamos contactá-lo em breve.', 'success');
     form.reset();
 
-    // Redirect to WhatsApp after 2 seconds
     var waLink = document.querySelector('.cta-whatsapp');
     if (waLink) {
       setTimeout(function () {
@@ -72,25 +70,16 @@
     return false;
   };
 
-  /**
-   * Validate PT phone number (9xx xxx xxx or +351 9xx xxx xxx)
-   */
   function isValidPTPhone(phone) {
     var cleaned = phone.replace(/[\s\-\(\)\.]/g, '');
     return /^(\+351)?9\d{8}$/.test(cleaned);
   }
 
-  /**
-   * Get URL parameter
-   */
   function getParam(name) {
     var params = new URLSearchParams(window.location.search);
     return params.get(name);
   }
 
-  /**
-   * Show form feedback message
-   */
   function showMessage(form, text, type) {
     var existing = form.parentNode.querySelector('.form-message');
     if (existing) existing.remove();
@@ -109,11 +98,13 @@
   }
 
   /**
-   * Send lead to Google Sheets (via Apps Script web app)
+   * Single backend call — Apps Script handles Sheets + Telegram fan-out.
+   * `mode: no-cors` because Apps Script returns text/html and we don't
+   * need to read the response.
    */
-  function sendToGoogleSheets(data) {
-    if (!GOOGLE_SHEETS_URL) return;
-    fetch(GOOGLE_SHEETS_URL, {
+  function sendToEndpoint(data) {
+    if (!ENDPOINT) return;
+    fetch(ENDPOINT, {
       method: 'POST',
       mode: 'no-cors',
       headers: { 'Content-Type': 'application/json' },
@@ -121,92 +112,55 @@
     }).catch(function () { /* silent fail */ });
   }
 
-  /**
-   * Send lead notification to Telegram
-   */
-  function sendToTelegram(data, icon) {
-    if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) return;
-    var ico = icon || '🔔';
-    var text = ico + ' *Novo Lead — coimbraservicos.pt*\n\n'
-      + (data.name ? '👤 ' + data.name + '\n' : '')
-      + (data.phone ? '📱 ' + data.phone + '\n' : '')
-      + (data.email ? '📧 ' + data.email + '\n' : '')
-      + '🔧 ' + (data.service || data.niche || '') + '\n'
-      + '📄 ' + (data.page || data.source_page || '') + '\n'
-      + (data.utm_source && data.utm_source !== 'direct' ? '🔗 ' + data.utm_source + ' / ' + data.utm_medium + '\n' : '')
-      + '🕐 ' + new Date().toLocaleString('pt-PT');
-
-    fetch('https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendMessage', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: TELEGRAM_CHAT_ID,
-        text: text,
-        parse_mode: 'Markdown'
-      })
-    }).catch(function () { /* silent fail */ });
-  }
-
-  /**
-   * Infer niche from pathname (e.g. /canalizador/ → canalizador)
-   */
   function getNiche() {
     var parts = window.location.pathname.replace(/^\/|\/$/g, '').split('/');
     return parts[0] || 'homepage';
   }
 
-  /**
-   * Build a click-lead payload (no name/phone — visitor called us)
-   */
-  function buildClickLead(type) {
+  function buildClickLead(type, icon) {
     return {
       timestamp: new Date().toISOString(),
       name: '',
       phone: '',
       email: '',
       service: getNiche(),
+      niche: getNiche(),
       page: window.location.pathname,
+      source_page: window.location.pathname,
       utm_source: getParam('utm_source') || 'direct',
       utm_medium: getParam('utm_medium') || 'none',
       utm_campaign: getParam('utm_campaign') || '',
       utm_keyword: getParam('utm_keyword') || '',
       source_type: type,
-      status: 'Clique ' + (type === 'tel' ? 'Tel' : 'WA')
+      status: 'Clique ' + (type === 'tel' ? 'Tel' : 'WA'),
+      icon: icon
     };
   }
 
-  /**
-   * Track phone clicks as leads → Sheets + Telegram
-   */
+  // Track phone clicks → endpoint (which forwards to Sheets + Telegram)
   document.addEventListener('click', function (e) {
     var link = e.target.closest('a[href^="tel:"]');
     if (!link) return;
 
-    var data = buildClickLead('tel');
+    var data = buildClickLead('tel', '📞');
 
     if (typeof gtag === 'function') {
       gtag('event', 'click_phone', { event_category: 'lead_capture', niche: data.service });
     }
-
-    sendToGoogleSheets(data);
-    sendToTelegram(data, '📞');
+    sendToEndpoint(data);
   });
 
-  /**
-   * Track WhatsApp clicks as leads → Sheets + Telegram
-   */
+  // Track WhatsApp clicks → endpoint
   document.addEventListener('click', function (e) {
     var link = e.target.closest('a[href*="wa.me"]');
     if (!link) return;
 
-    var data = buildClickLead('whatsapp');
+    var data = buildClickLead('whatsapp', '💬');
 
     if (typeof gtag === 'function') {
       gtag('event', 'click_whatsapp', { event_category: 'lead_capture', niche: data.service });
     }
-
-    sendToGoogleSheets(data);
-    sendToTelegram(data, '💬');
+    sendToEndpoint(data);
   });
 
 })();
