@@ -1,0 +1,133 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://coimbraservicos.pt/reparacao-eletrodomesticos/#business",
+      "name": "CoimbraServiços",
+      "description": "Precisa de reparação de eletrodomésticos em Coimbra? Técnicos especializados para máquina de lavar, frigorífico e mais. Serviço rápido e com garantia. Contacte-nos já!",
+      "url": "https://coimbraservicos.pt/reparacao-eletrodomesticos/",
+      "telephone": "+351 917 493 600",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Taveiro"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "€€"
+    },
+    {
+      "@type": "Service",
+      "name": "Reparação de Eletrodomésticos em Coimbra",
+      "serviceType": "Assistência Técnica ao Domicílio",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Taveiro"
+        }
+      ],
+      "provider": {
+        "@id": "https://coimbraservicos.pt/reparacao-eletrodomesticos/#business"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto custa a reparação de um eletrodoméstico em Coimbra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O custo total depende da avaria e das peças necessárias. A nossa taxa de deslocação e diagnóstico começa nos €45-€60. Após avaliação, receberá um orçamento detalhado. Procuramos sempre oferecer soluções económicas e transparentes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual o tempo médio de resposta para uma reparação em Coimbra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Na maioria dos casos, conseguimos agendar a intervenção em 24 a 48 horas úteis após o seu contacto. Entendemos a urgência e esforçamo-nos para restaurar a funcionalidade dos seus eletrodomésticos o mais rápido possível, minimizando o impacto na sua rotina."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que zonas de Coimbra são abrangidas pelo vosso serviço?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A nossa equipa opera em toda a área de Coimbra, incluindo freguesias como Santa Clara, Santo António dos Olivais, Eiras, São Martinho do Bispo, e Celas. Onde quer que esteja em Coimbra, estamos prontos para o ajudar com a sua reparação."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Os vossos serviços de reparação têm garantia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, todas as nossas reparações e peças substituídas beneficiam de uma garantia mínima de 6 meses, conforme a legislação em vigor. Trabalhamos apenas com técnicos qualificados e peças de qualidade, assegurando a longevidade da sua reparação e a sua total satisfação."
+          }
+        }
+      ]
+    }
+  ]
+}

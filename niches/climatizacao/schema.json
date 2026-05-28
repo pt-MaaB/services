@@ -1,0 +1,133 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HVACBusiness",
+      "@id": "https://coimbraservicos.pt/climatizacao/#business",
+      "name": "CoimbraServiços",
+      "description": "Precisa de um técnico de ar condicionado em Coimbra? Instalação, reparação e manutenção profissional. Orçamento grátis! Contacte já os nossos especialistas em climatização.",
+      "url": "https://coimbraservicos.pt/climatizacao/",
+      "telephone": "+351 917 493 600",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Taveiro"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "€€€"
+    },
+    {
+      "@type": "Service",
+      "name": "Técnico de Climatização em Coimbra",
+      "serviceType": "Climatização e Ar Condicionado",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Coimbra"
+        },
+        {
+          "@type": "Place",
+          "name": "Eiras"
+        },
+        {
+          "@type": "Place",
+          "name": "Solum"
+        },
+        {
+          "@type": "Place",
+          "name": "Celas"
+        },
+        {
+          "@type": "Place",
+          "name": "Santa Clara"
+        },
+        {
+          "@type": "Place",
+          "name": "Taveiro"
+        }
+      ],
+      "provider": {
+        "@id": "https://coimbraservicos.pt/climatizacao/#business"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual o custo médio para serviços de ar condicionado em Coimbra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O custo varia conforme a complexidade. Uma instalação pode começar nos €500 (mono-split básico), uma reparação de €70 a €250, e a manutenção anual entre €90 e €180. Orçamentos são personalizados e gratuitos, garantindo a melhor solução para a sua necessidade, sempre com transparência."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo demoram a chegar para uma reparação urgente em Coimbra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Compreendemos a urgência de uma avaria. Para chamadas em Coimbra, o nosso tempo de resposta é tipicamente de 30 a 60 minutos, dependendo da sua localização exata e da nossa disponibilidade. Priorizamos intervenções urgentes para minimizar o seu desconforto e restabelecer o funcionamento rapidamente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Em que zonas de Coimbra prestam serviços de climatização?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A nossa equipa opera em toda a área de Coimbra, incluindo freguesias como Santa Clara, Santo António dos Olivais, Eiras e São Paulo de Frades, Almedina, Cernache, Taveiro, e arredores. Onde quer que esteja em Coimbra, nós chegamos até si para garantir o seu conforto com rapidez e profissionalismo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Os vossos técnicos de climatização em Coimbra são certificados?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, todos os nossos técnicos são profissionais certificados, com a formação e as licenças necessárias para manusear gases fluorados e instalar/reparar sistemas de climatização, cumprindo rigorosamente a legislação. Trabalhamos apenas com equipamentos de qualidade e oferecemos garantia sobre os serviços prestados, para sua total tranquilidade."
+          }
+        }
+      ]
+    }
+  ]
+}
