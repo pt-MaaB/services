@@ -43,6 +43,7 @@
   }
   </script>
   {{FAQ_SCHEMA_BLOCK}}
+  {{LOCAL_BUSINESS_SCHEMA}}
 </head>
 <body>
   <div class="blog-container">
@@ -61,6 +62,8 @@
     </header>
 
     {{HERO_IMAGE_BLOCK}}
+
+    {{DISCLOSURE_BANNER}}
 
     <article class="article-body">
       {{ARTICLE_BODY_HTML}}
@@ -100,14 +103,8 @@
       </div>
     </article>
 
-    <!-- Author byline (HCU E-E-A-T signal) -->
-    <aside class="author-card" style="margin-top:2.5rem;padding:1.25rem 1.5rem;border:1px solid #e2e8f0;border-radius:12px;background:#fafafa;">
-      <p style="margin:0 0 0.35rem;font-size:0.75rem;color:#888;text-transform:uppercase;letter-spacing:0.05em;">{{AUTHOR_ROLE}}</p>
-      <p style="margin:0 0 0.35rem;font-size:1rem;font-weight:700;color:#1a1a1a;">
-        <a href="{{AUTHOR_URL}}" rel="author" style="color:{{NICHE_COLOR}};text-decoration:none;">{{AUTHOR_NAME}}</a>
-      </p>
-      <p style="margin:0;font-size:0.85rem;color:#555;line-height:1.5;">{{AUTHOR_BIO}}</p>
-    </aside>
+    <!-- Author byline (HCU E-E-A-T signal — persona OR real partner) -->
+    {{AUTHOR_CARD_HTML}}
 
     {{RELATED_HTML}}
 
