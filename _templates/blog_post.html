@@ -6,6 +6,7 @@
   <meta name="robots" content="index, follow">
   <title>{{TITLE}}</title>
   <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta name="author" content="{{AUTHOR_NAME}}">
   <link rel="canonical" href="{{CANONICAL_URL}}">
   <meta property="og:title" content="{{TITLE}}">
   <meta property="og:description" content="{{META_DESCRIPTION}}">
@@ -25,7 +26,14 @@
     "description": "{{META_DESCRIPTION_JSON}}",
     "datePublished": "{{DATE_PUBLISHED}}",
     "dateModified": "{{DATE_MODIFIED}}",
-    "author": {"@type": "Organization", "name": "coimbraservicos.pt"},
+    "author": {
+      "@type": "Person",
+      "name": "{{AUTHOR_NAME}}",
+      "jobTitle": "{{AUTHOR_ROLE_JSON}}",
+      "description": "{{AUTHOR_BIO_JSON}}",
+      "url": "{{AUTHOR_URL}}",
+      "worksFor": {"@type": "Organization", "name": "coimbraservicos.pt"}
+    },
     "publisher": {
       "@type": "Organization",
       "name": "coimbraservicos.pt",
@@ -34,13 +42,7 @@
     "mainEntityOfPage": {"@type": "WebPage", "@id": "{{CANONICAL_URL}}"}
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": {{FAQ_SCHEMA_JSON}}
-  }
-  </script>
+  {{FAQ_SCHEMA_BLOCK}}
 </head>
 <body>
   <div class="blog-container">
@@ -52,7 +54,9 @@
       <h1>{{H1}}</h1>
       <p class="article-meta">
         <span class="niche-tag">{{NICHE_DISPLAY}}</span>
-        Publicado a {{DATE_HUMAN}} &bull; Leitura: {{READ_MIN}} min
+        Por <a href="{{AUTHOR_URL}}" rel="author" style="color:{{NICHE_COLOR}};text-decoration:none;font-weight:600;">{{AUTHOR_NAME}}</a>
+        &bull; Publicado a {{DATE_HUMAN}}
+        &bull; Leitura: {{READ_MIN}} min
       </p>
     </header>
 
@@ -93,6 +97,15 @@
         <a href="https://wa.me/{{WA_E164}}?text={{WA_PREFILL_ENC}}" class="cta-whatsapp" onclick="gtag('event','click_whatsapp',{event_label:'{{NICHE_SLUG}}',location:'article_bottom'})">Contactar Agora</a>
       </div>
     </article>
+
+    <!-- Author byline (HCU E-E-A-T signal) -->
+    <aside class="author-card" style="margin-top:2.5rem;padding:1.25rem 1.5rem;border:1px solid #e2e8f0;border-radius:12px;background:#fafafa;">
+      <p style="margin:0 0 0.35rem;font-size:0.75rem;color:#888;text-transform:uppercase;letter-spacing:0.05em;">{{AUTHOR_ROLE}}</p>
+      <p style="margin:0 0 0.35rem;font-size:1rem;font-weight:700;color:#1a1a1a;">
+        <a href="{{AUTHOR_URL}}" rel="author" style="color:{{NICHE_COLOR}};text-decoration:none;">{{AUTHOR_NAME}}</a>
+      </p>
+      <p style="margin:0;font-size:0.85rem;color:#555;line-height:1.5;">{{AUTHOR_BIO}}</p>
+    </aside>
 
     {{RELATED_HTML}}
 
