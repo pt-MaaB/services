@@ -8,3 +8,5 @@ assets/
 *.local.json
 __pycache__/
 *.pyc
+.claude/
+SETUP.md
