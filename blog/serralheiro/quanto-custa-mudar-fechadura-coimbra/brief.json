@@ -1,0 +1,76 @@
+{
+  "date": "2026-06-24",
+  "niche": "serralheiro",
+  "target_keyword": "quanto custa mudar fechadura coimbra",
+  "secondary_keywords": [
+    "mudar fechadura coimbra preço",
+    "substituir fechadura coimbra",
+    "custo substituição fechadura porta",
+    "serralheiro mudar fechadura urgente coimbra"
+  ],
+  "search_intent": "informational + transactional",
+  "article_type": "guide",
+  "title_pt": "Quanto Custa Mudar a Fechadura em Coimbra? Preços 2026",
+  "meta_description": "Saiba quanto custa mudar a fechadura em Coimbra. Preços médios por tipo de fechadura, fatores que afetam o custo e como pedir orçamento gratuito hoje.",
+  "h2_outline": [
+    "Quanto Custa Mudar a Fechadura em Coimbra? (Preços Diretos)",
+    "Tipos de Fechadura e o Seu Custo",
+    "Quando Vale a Pena Mudar a Fechadura?",
+    "Quanto Tempo Demora a Substituição?",
+    "Pedir Orçamento Gratuito em Coimbra",
+    "Perguntas Frequentes"
+  ],
+  "cta_target": "whatsapp",
+  "url_slug": "quanto-custa-mudar-fechadura-coimbra",
+  "internal_links": [
+    "/serralheiro/",
+    "/serralheiro-seguranca/",
+    "/blog/serralheiro/quanto-custa-abrir-porta-coimbra/"
+  ],
+  "word_count_target": 1000,
+  "entities_required": [
+    "Coimbra",
+    "fechadura",
+    "cilindro europeu",
+    "serralheiro",
+    "orçamento",
+    "classe 4",
+    "Condeixa",
+    "Mealhada"
+  ],
+  "use_cases_to_cover": [
+    "novo inquilino / mudança de casa",
+    "chaves perdidas ou roubadas",
+    "pós-separação / ex-inquilino",
+    "fechadura danificada",
+    "upgrade de segurança"
+  ],
+  "atomic_answer": "Mudar a fechadura em Coimbra custa entre €80 e €350, dependendo do tipo de fechadura e da urgência. A substituição de um cilindro standard demora 30 a 60 minutos e pode ser feita no próprio dia.",
+  "price_anchors": {
+    "cilindro_standard": "€80–€150 (mão de obra + material)",
+    "cilindro_alta_seguranca_classe4": "€150–€300",
+    "fecho_multiponto": "€300–€600",
+    "taxa_urgencia_noturna": "+€30–€60 acima do preço base"
+  },
+  "faq_pairs": [
+    {
+      "q": "É possível mudar a fechadura sem substituir a porta inteira?",
+      "a": "Sim. Na grande maioria dos casos, apenas o cilindro ou o corpo da fechadura é substituído, preservando a porta e o marco. Só é necessário substituir a porta em situações de danos estruturais graves."
+    },
+    {
+      "q": "Quanto tempo leva a substituição de uma fechadura?",
+      "a": "Uma substituição de cilindro standard demora 30 a 60 minutos. A instalação de um fecho multiponto demora 2 a 4 horas. Em casos urgentes, o técnico pode estar no local em 20 a 40 minutos dentro de Coimbra cidade."
+    },
+    {
+      "q": "Preciso de estar em casa para mudar a fechadura?",
+      "a": "Sim, é necessária a presença do proprietário ou de alguém autorizado para confirmar a identidade e dar acesso ao imóvel. Em situações de emergência (ex: chaves roubadas) pedimos sempre identificação no local antes de qualquer intervenção."
+    },
+    {
+      "q": "Que fechadura recomendam para uma casa de habitação?",
+      "a": "Para habitação, recomendamos cilindro europeu de classe 3 ou 4 com anti-bumping e anti-picking, de marcas como Mul-T-Lock, AXA ou ISEO. O custo é ligeiramente superior ao standard, mas a segurança adicional justifica o investimento."
+    }
+  ],
+  "content_notes": "Lead with the price anchors table early — this is what the user came to see. Use 'PT-PT' European Portuguese throughout. Avoid 'você' — use 'si' or direct address. Emphasize same-day service and Coimbra + district coverage. Link naturally to serralheiro-seguranca page when discussing high-security options.",
+  "handoff_to": "content",
+  "status": "ready_for_content"
+}
