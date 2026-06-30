@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-25",
+  "niche": "serralheiro",
+  "target_keyword": "chave partida na fechadura coimbra",
+  "secondary_keywords": [
+    "chave partida fechadura o que fazer",
+    "extrair chave partida fechadura coimbra",
+    "serralheiro chave partida coimbra",
+    "chave dobrada na fechadura coimbra",
+    "tirar chave partida porta coimbra"
+  ],
+  "search_intent": "informational + transactional (urgent)",
+  "article_type": "how-to + faq",
+  "title_pt": "Chave Partida na Fechadura em Coimbra? O Que Fazer — Guia 2026",
+  "meta_description": "Chave partida ou presa na fechadura em Coimbra? Saiba o que NÃO fazer e como um serralheiro urgente retira a chave sem danificar a fechadura. Resposta em 30 min.",
+  "slug": "chave-partida-fechadura-coimbra",
+  "url": "https://coimbraservicos.pt/blog/serralheiro/chave-partida-fechadura-coimbra/",
+  "h2_outline": [
+    "O Que Acontece Quando a Chave Parte na Fechadura",
+    "O Que NÃO Fazer (Erros que Bloqueiam a Fechadura para Sempre)",
+    "Pode Retirar a Chave Sem Serralheiro? (Métodos DIY e Limitações)",
+    "Quando Chamar um Serralheiro Urgente em Coimbra",
+    "Quanto Custa Retirar uma Chave Partida em Coimbra",
+    "Como Prevenir que a Chave Parta Novamente",
+    "Perguntas Frequentes"
+  ],
+  "word_count_target": 1100,
+  "cta_target": "whatsapp",
+  "cta_pretill": "Olá, tenho uma chave partida na fechadura. Precisava de ajuda urgente em Coimbra.",
+  "internal_links": [
+    "/serralheiro/",
+    "/blog/serralheiro/quanto-custa-abrir-porta-coimbra/"
+  ],
+  "entities_required": [
+    "Coimbra",
+    "fechadura",
+    "chave partida",
+    "serralheiro urgente",
+    "extrator de chaves",
+    "cilindro europeu",
+    "24 horas",
+    "Condeixa",
+    "Mealhada"
+  ],
+  "faq_pairs": [
+    {
+      "q": "A chave partiu mas a porta está aberta — tenho urgência?",
+      "a": "Depende. Se a porta está aberta e o fragmento da chave não bloqueia o mecanismo, pode aguardar. Se o fragmento impede o uso da fechadura — não consegue inserir a chave sobressalente — precisa de intervenção hoje para não ficar trancado."
+    },
+    {
+      "q": "O serralheiro consegue retirar a chave sem estragar a fechadura?",
+      "a": "Na maioria dos casos, sim. Com ferramentas profissionais de extração (ganchos, pinças espirais, pickout tools) é possível retirar o fragmento sem danificar o cilindro. Em chaves muito partidas ou com fragmento profundo, pode ser necessário substituir o cilindro — o custo é comunicado antes de qualquer trabalho."
+    },
+    {
+      "q": "Quanto custa chamar um serralheiro para chave partida em Coimbra?",
+      "a": "A extração de chave partida custa normalmente entre €40 e €100, dependendo da profundidade do fragmento e do tipo de fechadura. Se for necessário substituir o cilindro, adicione €80–€200. Nas deslocações nocturnas ou ao fim de semana pode aplicar-se uma taxa extra."
+    },
+    {
+      "q": "Por que partem as chaves nas fechaduras?",
+      "a": "As causas mais comuns são: chave desgastada (copias de má qualidade ou muito antigas), fechadura com mecanismo seco (sem lubrificação), forçar a chave quando a fechadura está rigida, e temperaturas extremas que tornam o metal quebradiço. Chaves copiadas em massa são 30% mais frágeis que as originais."
+    }
+  ],
+  "positioning_note": "Article bridges informational (what to do) → transactional (call a locksmith). Atomic answer in first paragraph. Empathy tone — reader is stressed. Urgency: 'don't make it worse' hook in intro.",
+  "handoff_to": "content",
+  "status": "ready"
+}
