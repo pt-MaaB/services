@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-30",
+  "niche": "eletricista",
+  "slug": "eletricista-preco",
+  "target_keyword": "quanto custa eletricista coimbra",
+  "secondary_keywords": [
+    "preço eletricista urgente coimbra",
+    "custo substituição quadro elétrico coimbra",
+    "orçamento eletricista coimbra",
+    "tabela preços eletricistas 2026"
+  ],
+  "search_intent": "informational + transactional",
+  "article_type": "guide",
+  "title_pt": "Quanto Custa um Eletricista em Coimbra? Preços 2026",
+  "meta_description": "Saiba quanto custa chamar um eletricista em Coimbra. Preços por hora, trabalhos comuns (quadro, tomadas, certificação) e como pedir orçamento gratuito.",
+  "h2_outline": [
+    "Preços por Hora e por Serviço em Coimbra",
+    "Trabalhos Mais Comuns e Respetivos Custos",
+    "Fatores Que Influenciam o Preço Final",
+    "Como Pedir Orçamento Gratuito Sem Compromisso",
+    "Perguntas Frequentes Sobre Preços de Eletricistas"
+  ],
+  "cta_target": "whatsapp",
+  "wa_prefill": "Olá, vim do site sobre preços de eletricista em Coimbra. Gostaria de pedir um orçamento.",
+  "internal_links": ["/eletricista/", "/eletricista-risco/"],
+  "word_count_target": 1000,
+  "entities_required": [
+    "Coimbra",
+    "eletricista",
+    "orçamento gratuito",
+    "quadro elétrico",
+    "tomada",
+    "certificação DGEG",
+    "2026"
+  ],
+  "pricing_data": {
+    "deslocação_base": "€30–€60",
+    "hora_trabalho": "€35–€55",
+    "substituição_tomada": "€40–€80",
+    "substituição_quadro_t2t3": "€300–€600",
+    "certificação_dgeg": "€150–€300",
+    "urgência_noturna_extra": "€25–€60"
+  },
+  "notes": "Third eletricista page. Fills the pricing-intent gap (previous articles: urgency 24h + old-installation risk). Include a clear price table in the article — high-intent readers want numbers before calling. CTA should emphasize free quote, not emergency urgency."
+}
