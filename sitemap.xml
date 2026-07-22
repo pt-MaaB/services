@@ -840,4 +840,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://coimbraservicos.pt/blog/eletricista/guia-completo-para-instalacao-eletrica-nova-em-coimbra/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
