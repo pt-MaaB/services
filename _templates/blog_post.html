@@ -18,30 +18,7 @@
   <link rel="stylesheet" href="/css/blog.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id={{GA4_ID}}"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{GA4_ID}}');</script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "{{TITLE_JSON}}",
-    "description": "{{META_DESCRIPTION_JSON}}",
-    "datePublished": "{{DATE_PUBLISHED}}",
-    "dateModified": "{{DATE_MODIFIED}}",
-    "author": {
-      "@type": "Person",
-      "name": "{{AUTHOR_NAME}}",
-      "jobTitle": "{{AUTHOR_ROLE_JSON}}",
-      "description": "{{AUTHOR_BIO_JSON}}",
-      "url": "{{AUTHOR_URL}}",
-      "worksFor": {"@type": "Organization", "name": "coimbraservicos.pt"}
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "coimbraservicos.pt",
-      "url": "https://coimbraservicos.pt"
-    },
-    "mainEntityOfPage": {"@type": "WebPage", "@id": "{{CANONICAL_URL}}"}
-  }
-  </script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "{{TITLE_JSON}}", "description": "{{META_DESCRIPTION_JSON}}", "datePublished": "{{DATE_PUBLISHED}}", "dateModified": "{{DATE_MODIFIED}}", "author": {"@type": "Person", "name": "{{AUTHOR_NAME}}", "jobTitle": "{{AUTHOR_ROLE_JSON}}", "description": "{{AUTHOR_BIO_JSON}}", "url": "{{AUTHOR_URL}}", "worksFor": {"@type": "Organization", "name": "coimbraservicos.pt"}}, "publisher": {"@type": "Organization", "name": "coimbraservicos.pt", "url": "https://coimbraservicos.pt"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "{{CANONICAL_URL}}"}}</script>
   {{FAQ_SCHEMA_BLOCK}}
   {{LOCAL_BUSINESS_SCHEMA}}
 </head>
