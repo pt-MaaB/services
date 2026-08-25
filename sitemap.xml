@@ -25,18 +25,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/eletricista/</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/eletricista-certificado/</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/eletricista-risco/</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -59,12 +47,6 @@
     <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/pragas/</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coimbraservicos.pt/pragas-profissional/</loc>
@@ -115,18 +97,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/quadro-eletrico-dispara-causas/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/poupar-eletricidade-casa-coimbra/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/serralheiro/tipos-fechaduras-seguranca-guia/</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -134,18 +104,6 @@
   </url>
   <url>
     <loc>https://coimbraservicos.pt/blog/serralheiro/o-que-fazer-perdi-chaves-casa/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/como-identificar-pragas-casa/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/prevenir-pragas-verao-coimbra/</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -159,18 +117,6 @@
   <url>
     <loc>https://coimbraservicos.pt/blog/limpeza-terrenos/quanto-custa-limpeza-terreno-coimbra/</loc>
     <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/preco-eletricista-coimbra-quanto-custa/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/quanto-custa-desinfestacao-baratas-coimbra/</loc>
-    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -295,12 +241,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/eletricista-de-urgencia-em-coimbra-guia-rapido-para-curto-ci/</loc>
-    <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/mudancas/quanto-custa-uma-mudanca-em-coimbra/</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -337,12 +277,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/eliminar-ratos-inverno-coimbra/</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/climatizacao/manutencao-ar-condicionado-coimbra-guia/</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -356,12 +290,6 @@
   </url>
   <url>
     <loc>https://coimbraservicos.pt/blog/mudancas/checklist-para-mudanca-residencial-em-coimbra/</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/certificacao-eletrica-em-coimbra-o-que-precisa-de-saber-sobr/</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -387,12 +315,6 @@
   <url>
     <loc>https://coimbraservicos.pt/blog/canalizador/manutencao-de-esquentador-em-coimbra-guia-essencial-para-o-i/</loc>
     <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/legislacao-controlo-pragas-alojamento-local-coimbra/</loc>
-    <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -427,19 +349,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/urgencias-electricistas-24-horas/</loc>
-    <lastmod>2026-07-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/serralheiro/tipos-de-chaves-de-porta/</loc>
-    <lastmod>2026-07-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/dedetizacao/</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -481,19 +391,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/eletricista-perto-de-mim/</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/serralheiro/tipos-de-fechadura/</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/dedetizacao-baratas/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -541,19 +439,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/quando-o-disjuntor-dispara-o-que-pode-ser/</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/serralheiro/serralheiro-coimbra/</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/dedetizadora-perto-de-mim/</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -601,18 +487,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/porque-o-quadro-eletrico-dispara/</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/detetizacao/</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/limpeza-terrenos/dfci-coimbra-o-que-precisa-saber-sobre-a-limpeza/</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -620,12 +494,6 @@
   </url>
   <url>
     <loc>https://coimbraservicos.pt/blog/canalizador/tabela-de-preco-para-desentupimento/</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/disjuntor-dispara/</loc>
     <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -649,19 +517,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/eletricista-certificado-coimbra/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/serralheiro/abertura-de-portas-24-horas/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/ddtizacao/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -674,12 +530,6 @@
   </url>
   <url>
     <loc>https://coimbraservicos.pt/blog/canalizador/canos-entupidos-o-que-fazer/</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/instalacao-eletrica-coimbra/</loc>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -703,19 +553,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/curto-circuito-coimbra/</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/serralheiro/tipos-de-chaves-de-casa/</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/deterizacao/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -728,12 +566,6 @@
   </url>
   <url>
     <loc>https://coimbraservicos.pt/blog/canalizador/desentupimento-coimbra/</loc>
-    <lastmod>2026-07-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/preco-eletricista-coimbra/</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -763,18 +595,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/eletricista-24h-coimbra/</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/coimbrapragas/</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/climatizacao/manutencao-ar-condicionado-coimbra/</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -782,12 +602,6 @@
   </url>
   <url>
     <loc>https://coimbraservicos.pt/blog/canalizador/canalizador-24-horas/</loc>
-    <lastmod>2026-07-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/diferenca-entre-eletricista-residencial-e-industrial-em-coim/</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -817,19 +631,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/guia-completo-para-instalacao-eletrica-nova-em-coimbra/</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/serralheiro/diferenca-porta-blindada-e-porta-de-seguranca-coimbra/</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/empresa-de-dedetizacao-perto-de-mim/</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -842,12 +644,6 @@
   </url>
   <url>
     <loc>https://coimbraservicos.pt/blog/canalizador/fuga-de-agua-coimbra/</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/sinais-de-problemas-no-quadro-eletrico-da-sua-casa-em-solum/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -877,19 +673,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/faq-eletricista-coimbra-respostas-as-suas-duvidas-mais-comun/</loc>
-    <lastmod>2026-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/serralheiro/legislacao-mudanca-fechadura-arrendamento-coimbra/</loc>
-    <lastmod>2026-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/controlo-de-pragas-coimbra/</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -907,12 +691,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/como-evitar-sobrecargas-eletricas-no-verao-em-celas-coimbra/</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/serralheiro/serralheiro-urgente-solum-coimbra/</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -920,12 +698,6 @@
   </url>
   <url>
     <loc>https://coimbraservicos.pt/blog/serralheiro/abertura-de-portas-coimbra/</loc>
-    <lastmod>2026-07-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/eletricista-coimbra/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -955,19 +727,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/eletricista-mealhada/</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/climatizacao/tecnico-ar-condicionado-coimbra/</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/desratizacao-coimbra/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -979,19 +739,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/eletricista-lousa/</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/climatizacao/ar-condicionado-vs-bomba-de-calor-coimbra/</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/desinfestacao-coimbra/</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1009,19 +757,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/checklist-eletrico-essencial-antes-de-comprar-casa-em-eiras/</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/climatizacao/preparacao-ar-condicionado-verao-coimbra/</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/como-eliminar-baratas-cozinha-coimbra/</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1093,12 +829,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/eletricista-credenciado/</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/climatizacao/preco-instalacao-ar-condicionado-multi-split-em-coimbra-guia/</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -1107,12 +837,6 @@
   <url>
     <loc>https://coimbraservicos.pt/blog/mudancas/quanto-custa-mudanca-de-apartamento-t2-coimbra/</loc>
     <lastmod>2026-08-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/eletricista-residencial-perto-de-mim/</loc>
-    <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1129,19 +853,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/preco-hora-eletricista-portugal/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/serralheiro/tipos-de-fechaduras/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/dedetizacao-preco/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1231,12 +943,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/dedetizacao-ratos/</loc>
-    <lastmod>2026-08-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/climatizacao/limpeza-de-ar-condicionado-em-coimbra-mantenha-o-seu-equipam/</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -1249,20 +955,8 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/disjuntor-desarmando-e-nao-volta/</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/jardinagem/manutencao-de-jardins-coimbra/</loc>
     <lastmod>2026-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/diferencial-40a/</loc>
-    <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1297,12 +991,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/quadro-eletrico-dispara/</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://coimbraservicos.pt/blog/pintor/como-eliminar-humidade-nas-paredes-coimbra/</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -1310,18 +998,6 @@
   </url>
   <url>
     <loc>https://coimbraservicos.pt/blog/serralheiro/tipos-de-fechaduras-para-portas-de-madeira/</loc>
-    <lastmod>2026-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/eletricista/legislacao-eletrica-em-coimbra-o-que-muda-em-2024-para-propr/</loc>
-    <lastmod>2026-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coimbraservicos.pt/blog/pragas/baratas-na-casa-de-banho/</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
